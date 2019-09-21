@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CreateDirNameText</key>
+	<string>freetzi.com</string>
+	<key>New item</key>
+	<string>freetzi.com</string>
+	<key>CreateDirURLText</key>
+	<string>freetzi.com</string>
+	<key>GetURLText</key>
+	<string>http://editoreye.coolpage.biz/index.html</string>
+	<key>ListURLText</key>
+	<string>ftp://ftp1.freebsd.org/pub/FreeBSD/</string>
+	<key>PutURLText</key>
+	<string>ftp://orgfree.com3</string>
+	<key>URLGetURLText</key>
+	<string>ftp://orgfree.com4</string>
+	<key>Username</key>
+	<string>editoreye.coolpage.biz</string>
+	<key>CurrentFileName</key>
+	<string>index.html</string>
+	<key>CreateDirText</key>
+	<string>http://editeye.somee.com/index.html</string>
+	<key>countdown</key>
+	<string>5</string>
+</dict>
+</plist>

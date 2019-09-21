@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<!-- meta name="viewport" content="width=1049, height=1066" / -->
+<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" / >
+<meta name="format-detection" content="telephone=no">
+<!-- (C) Valeriy PETRENKO. Contact: <a href="mailto:belgweb@gmail.com">belgweb@gmail.com</a>  -->
+<title>Larisa (The Game)</title>
+<style type="text/css">
+    
+
+* {
+-webkit-touch-callout: none;
+-webkit-user-select: none; /* Disable selection/Copy of UIWebView */
+}
+
+
+    
+body
+
+ {
+
+
+    -webkit-user-select: none;
+font-family:Arial;
+text-shadow:0 1px 1px rgba(55,55,55,0.4);
+color:#FFFFFF;
+margin:0;
+padding:0;
+}
+ 
+
+ 
+
+#container
+{
+    /* Set these dimensions so the card can be properly displayed in Safari on iPhone */
+    height: 356px;
+    width: 320px;
+   
+    
+    /* Disable tap highlighting */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    
+    /* Give some depth to the card */
+    -webkit-perspective: 600;
+}
+
+
+
+
+.square {
+	top: 60px;
+	left: 20px;
+	width: 280px;
+	height: 280px;
+	background: gray;
+	position: absolute;
+	
+}
+
+
+
+
+.triangle-up {
+	position: absolute;
+	top: 200px;
+	left: 20px;
+	width: 0;
+	height: 0;
+	border-left: 140px solid transparent;
+	border-right: 140px solid transparent;
+	border-bottom: 140px solid #f4e443;
+	
+	
+    /* Ensure that the card lives correctly in 3D space */
+    -webkit-transform-style: preserve-3d;
+    
+    /* We apply this property to the card so it can smoothly flip between its sides */
+    -webkit-transition-property: -webkit-transform;
+    /* Make the animation occur over a period of 1.5 seconds */
+    -webkit-transition-duration: 1.5s;
+}
+.triangle-down {
+	position: absolute;
+	top: 60px;
+	left: 20px;
+	width: 0;
+	height: 0;
+	border-left: 140px solid transparent;
+	border-right: 140px solid transparent;
+	border-top: 140px solid #fc7c7e;
+}
+.triangle-left {
+	position: absolute;
+	top: 60px;
+	left: 160px;
+	width: 0;
+	height: 0;
+	border-top: 140px solid transparent;
+	border-right: 140px solid #83c9fd;
+	border-bottom: 140px solid transparent;
+}
+.triangle-right {
+	position: absolute;
+	top: 60px;
+	left: 20px;
+	width: 0;
+	height: 0;
+	border-top: 140px solid transparent;
+	border-left: 140px solid #b5df36;;
+	border-bottom: 140px solid transparent;
+}
+
+
+
+</style>
+<!-- Colors: #fc7c7e, #b5df36, #f4e443 , #83c9fd,  #fdbc40, #e3a8fd, #c8c8c8 / -->
+<!-- 24 Greek alphabet: 
+ α	alpha
+ β	beta
+ γ	gamma
+ δ	delta
+ ε	epsilon	
+ ζ	zeta
+ η	eta
+ θ	theta
+ ι	iota
+ κ	kappa
+ λ	lambda
+ μ	mu
+ ν	nu
+ ξ	xi
+ ο	omicron
+ π	pi
+ ρ	rho
+ σ sigma	
+ τ	tau
+ υ	upsilon
+ φ	phi
+ χ	chi
+ ψ	psi
+ ω	omega
+ / -->
+ 
+<script type="text/javascript">
+var state = 1;
+function flipCard() {
+    if (state) {
+        document.getElementById("front").style.webkitTransform="rotateX(-180deg)";    
+        document.getElementById("back").style.webkitTransform="rotateX(0deg)";
+        state = 0;
+    } else {
+        document.getElementById("front").style.webkitTransform="rotateX(0deg)";    
+        document.getElementById("back").style.webkitTransform="rotateX(180deg)";
+        state = 1;
+    }        
+}
+</script>
+</head>
+ 
+ 
+ 
+<body  bgcolor="#6090c0">
+
+<div class="square"></div>
+
+
+<div id="container">
+<div class="triangle-up front" id="front"  ontouchstart="flipCard();"></div>
+<div class="triangle-up back" id="back"  ontouchstart="flipCard();"></div>
+</div>
+			<!--div class="triangle-up"></div-->
+
+
+
+<div class="triangle-down"></div>
+<div class="triangle-left"></div>
+<div class="triangle-right"></div>
+</body>
+</html>

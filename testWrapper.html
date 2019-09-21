@@ -1,0 +1,48 @@
+<style type="text/css">
+  #grow {
+    -moz-transition: height .5s;
+    -ms-transition: height .5s;
+    -o-transition: height .5s;
+    -webkit-transition: height .5s;
+    transition: height .5s;
+    height: 0;
+    overflow: hidden;
+  /*  outline: 1px solid red;*/
+  }
+</style>
+<script type='text/javascript'>
+  function growDiv() {
+    var growDiv = document.getElementById('grow');
+    if (growDiv.clientHeight) {
+      growDiv.style.height = 0;
+    } else {
+      var wrapper = document.querySelector('.measuringWrapper');
+      growDiv.style.height = wrapper.clientHeight + "px";
+    }
+  }
+</script>
+
+<input type="button" onclick="growDiv()" value="grow">
+
+<div id='grow'>
+  <div class='measuringWrapper'>
+    <div>
+    The contents of my div.
+    </div>
+    <div>
+    The contents of my div.
+    </div>
+    <div>
+    The contents of my div.
+    </div>
+    <div>
+    The contents of my div.
+    </div>
+    <div>
+    The contents of my div.
+    </div>
+    <div>
+    The contents of my div.
+    </div>
+  </div>
+</div>

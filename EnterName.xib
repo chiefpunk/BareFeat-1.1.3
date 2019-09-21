@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EnterNameController">
+            <connections>
+                <outlet property="cancelButton" destination="Gev-2I-Hre" id="P7q-wT-pNW"/>
+                <outlet property="currentScoresButton" destination="46" id="56"/>
+                <outlet property="saveButton" destination="gBq-s1-rBj" id="2fI-Kt-1nL"/>
+                <outlet property="textField" destination="28" id="30"/>
+                <outlet property="view" destination="27" id="29"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="27">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <textField opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your Name" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="28">
+                    <rect key="frame" x="30" y="101" width="260" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="jiV-pj-doj"/>
+                    </constraints>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="57"/>
+                    </connections>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Current score:" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="46">
+                    <rect key="frame" x="30" y="30" width="260" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="aF8-t3-r59"/>
+                    </constraints>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                    <color key="shadowColor" red="0.96536144580000005" green="0.92620481929999998" blue="0.8087349398" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBq-s1-rBj">
+                    <rect key="frame" x="175" y="172" width="115" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="SQm-Ux-eCr"/>
+                    </constraints>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Save">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="save:" destination="-1" eventType="touchDown" id="7Mk-to-TdT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gev-2I-Hre">
+                    <rect key="frame" x="30" y="172" width="115" height="41"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="41" id="E55-xw-Tif"/>
+                    </constraints>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Cancel">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancel:" destination="-1" eventType="touchDown" id="Wlk-j4-Fu0"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.93725490199999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="46" firstAttribute="leading" secondItem="e5A-PI-13m" secondAttribute="leading" constant="30" id="12B-Za-vGs"/>
+                <constraint firstItem="gBq-s1-rBj" firstAttribute="width" secondItem="Gev-2I-Hre" secondAttribute="width" id="1zh-Oi-d6f"/>
+                <constraint firstItem="46" firstAttribute="top" secondItem="e5A-PI-13m" secondAttribute="top" constant="30" id="7pC-PN-240"/>
+                <constraint firstItem="e5A-PI-13m" firstAttribute="trailing" secondItem="46" secondAttribute="trailing" constant="30" id="9NF-hi-Iyb"/>
+                <constraint firstItem="e5A-PI-13m" firstAttribute="trailing" secondItem="gBq-s1-rBj" secondAttribute="trailing" constant="30" id="Axc-nf-RFF"/>
+                <constraint firstItem="gBq-s1-rBj" firstAttribute="top" secondItem="28" secondAttribute="bottom" constant="30" id="BoB-AB-mLp"/>
+                <constraint firstItem="28" firstAttribute="top" secondItem="46" secondAttribute="bottom" constant="30" id="UY0-N7-pW5"/>
+                <constraint firstItem="e5A-PI-13m" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="gBq-s1-rBj" secondAttribute="bottom" constant="30" id="VN5-X7-yAM"/>
+                <constraint firstItem="28" firstAttribute="leading" secondItem="e5A-PI-13m" secondAttribute="leading" constant="30" id="a9y-XD-vXX"/>
+                <constraint firstItem="Gev-2I-Hre" firstAttribute="top" secondItem="28" secondAttribute="bottom" constant="30" id="dEE-bT-YIN"/>
+                <constraint firstItem="gBq-s1-rBj" firstAttribute="leading" secondItem="Gev-2I-Hre" secondAttribute="trailing" constant="30" id="dZz-FU-kcN"/>
+                <constraint firstItem="e5A-PI-13m" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Gev-2I-Hre" secondAttribute="bottom" constant="30" id="jTw-7j-40x"/>
+                <constraint firstItem="gBq-s1-rBj" firstAttribute="top" secondItem="28" secondAttribute="bottom" constant="30" id="xpJ-2K-PBN"/>
+                <constraint firstItem="e5A-PI-13m" firstAttribute="trailing" secondItem="28" secondAttribute="trailing" constant="30" id="y7v-gc-SJk"/>
+                <constraint firstItem="Gev-2I-Hre" firstAttribute="leading" secondItem="e5A-PI-13m" secondAttribute="leading" constant="30" id="yxz-Ra-l0J"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <inset key="insetFor6xAndEarlier" minX="0.0" minY="-20" maxX="0.0" maxY="20"/>
+            <viewLayoutGuide key="safeArea" id="e5A-PI-13m"/>
+            <point key="canvasLocation" x="34" y="54"/>
+        </view>
+    </objects>
+</document>

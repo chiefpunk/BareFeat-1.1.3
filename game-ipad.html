@@ -1,0 +1,1495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <meta name="viewport" content="width=320, height=568">
+       <!--  <meta name="viewport" content="width=device-width" / -->
+        <!-- meta name="viewport" content="width=1049, height=1066" / -->
+        <meta name="viewport" content="initial-scale=2.0; maximum-scale=2.0; user-scalable=0;" / >
+            <meta name="format-detection" content="telephone=no">
+                <!-- (C) Valeriy PETRENKO. Contact: <a href="mailto:belgweb@gmail.com">belgweb@gmail.com</a>  -->
+                <title>Bare Feet (The Game)</title>
+                <style>
+                    
+                    
+                    
+                    
+                    
+                    {
+                        -webkit-user-select: none;
+                        margin:0;
+                        padding:0;
+                    }
+                    
+                
+                    
+                    
+                    .scoreText {
+                        position: absolute;
+                        z-index: +4;
+                        font-size: 100px;
+                        left: 15px;
+                        top: -200px;
+                        color: white;
+                        opacity: 1;
+                        
+                    }
+                    .scoreText.moveText
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 901px;
+                     
+                         
+                        opacity: 1;
+                        -webkit-animation: rightThenLeft 2s ease;
+                        
+                    }
+                    @-webkit-keyframes rightThenLeft {
+                        0%   {
+                            top: -100px;
+                            
+                        }
+                        100%   {
+                            top: 701px;
+                        }
+                        
+                    }
+                    
+                    .levelText {
+                        position: absolute;
+                        z-index: +4;
+                        font-size: 300px;
+                        left: 79px;
+                        top: -400px;
+                        color: white;
+                        opacity: 1;
+                        
+                    }
+                    .levelText.moveLevel
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 901px;
+                        left: 79px;
+                        
+                        font-size: 300px;
+                        opacity: 1;
+                        -webkit-animation: rightThenLeft 2s ease;
+                        
+                    }
+                    
+                    
+                    
+                    
+                    .BareFeet1 {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                       
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                    }
+                    .BareFeet2 {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                        
+                        
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                    }
+                    .BareFeet3  {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                        
+                        
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                        
+                    }
+                    .BareFeet4  {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                        
+                        
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                        
+                    }
+                    .BareFeet5  {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                        
+                        
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                        
+                    }
+                    .BareFeet6      {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                        
+                        
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                        
+                    }
+                    .BareFeet7 {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                        left: 139px;
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                        
+                    }
+                    
+                    
+                    
+                    .BareFeet8  {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                        
+                        
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                        
+                    }
+                    
+                    .BareFeet9  {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                        
+                        
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                        
+                        
+                        
+                    }
+                    .BareFeet10 {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                        
+                        
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                        
+                    }
+                    .BareFeet11  {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                        
+                        
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                        
+                    }
+                    .BareFeet12,
+                    .BareFeet13, .BareFeet14, .BareFeet15, .BareFeet16,
+                    .BareFeet17, .BareFeet18, .BareFeet19, .BareFeet20,
+                    .BareFeet21, .BareFeet22, .BareFeet23, .BareFeet24  {
+                        z-index:  -99;
+                        position: absolute;
+                        background: url('Feet.png');
+                        
+                        left: 139px;
+                        top: 86px;
+                        
+                        
+                        width: 42px;
+                        height: 87px;
+                        opacity: 1;
+                        
+                        
+                    }
+                    
+                    
+                    .BareFeet1.flipCard1
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 61px;
+                        left: 139px;
+                        -webkit-transform: rotate(135deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet1.flipCard1
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 61px;
+                        left: 139px;
+                        -webkit-transform: rotate(135deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet2.flipCard1a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 171px;
+                        left: 229px;
+                        -webkit-transform:rotate(125deg) scale(-1, 1);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet3.flipCard2
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 80px;
+                        left: 149px;
+                        -webkit-transform: rotate(185deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet4.flipCard2a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 236px;
+                        left: 129px;
+                        -webkit-transform:rotate(175deg) scale(-1, 1);
+                        
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet5.flipCard3
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 73px;
+                        left: 145px;
+                        -webkit-transform: rotate(250deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet6.flipCard3a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 151px;
+                        left: 40px;
+                        -webkit-transform:rotate(220deg) scale(-1, 1);
+                        
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet7.flipCard4
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 177px;
+                        left: 229px;
+                        -webkit-transform: rotate(250deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet8.flipCard4a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 241px;
+                        left: 129px;
+                        
+                        -webkit-transform:rotate(220deg) scale(-1, 1);
+                        
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    
+                    .BareFeet9.flipCard5
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 177px;
+                        left: 229px;
+                        -webkit-transform: rotate(275deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet10.flipCard5a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 151px;
+                        left: 55px;
+                        -webkit-transform:rotate(260deg) scale(-1, 1);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                    }
+                    .BareFeet11.flipCard6
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 170px;
+                        left: 219px;
+                        -webkit-transform: rotate(315deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet12.flipCard6a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 61px;
+                        left: 141px;
+                        -webkit-transform:rotate(297deg) scale(-1, 1);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                    }
+                    .BareFeet13.flipCard7
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 245px;
+                        left: 140px;
+                        -webkit-transform: rotate(323deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet14.flipCard7a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 151px;
+                        left: 55px;
+                        
+                        -webkit-transform:rotate(293deg) scale(-1, 1);
+                        
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet15.flipCard8
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 241px;
+                        left: 129px;
+                        -webkit-transform: rotate(10deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet16.flipCard8a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        
+                        top: 69px;
+                        left: 149px;
+                        -webkit-transform:rotate(340deg) scale(-1, 1);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet17.flipCard9
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 241px;
+                        left: 129px;
+                        
+                        -webkit-transform: rotate(55deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet18.flipCard9a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 160px;
+                        left: 229px;
+                        
+                        -webkit-transform:rotate(35deg) scale(-1, 1);
+                        
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet19.flipCard10
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 145px;
+                        left: 51px;
+                        
+                        
+                        -webkit-transform: rotate(60deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet20.flipCard10a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 69px;
+                        left: 149px;
+                        
+                        -webkit-transform:rotate(35deg) scale(-1, 1);
+                        
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet21.flipCard11
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 145px;
+                        left: 51px;
+                        
+                        
+                        -webkit-transform: rotate(100deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet22.flipCard11a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 177px;
+                        left: 229px;
+                        -webkit-transform:rotate(75deg) scale(-1, 1);
+                        
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet23.flipCard12
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 145px;
+                        left: 51px;
+                        
+                        
+                        -webkit-transform: rotate(140deg);
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    .BareFeet24.flipCard12a
+                    {
+                        z-index: 3;
+                        opacity: 1;
+                        top: 255px;
+                        left: 140px;
+                        
+                        -webkit-transform:rotate(120deg) scale(-1, 1);
+                        
+                        opacity: 0;
+                        -webkit-transition: opacity 2.3s ease-out;
+                        
+                    }
+                    
+                    
+                    /* ************ */
+                    
+                    .triangle1 {
+                        opacity: 1;
+                        position: absolute;
+                        top: 60px;
+                        left: 20px;
+                        width: 0;
+                        max-height: 0;
+                        border-left: 140px solid transparent;
+                        border-right: 140px solid transparent;
+                        border-top: 140px solid #fc7c7e;
+                        -webkit-transform-style: preserve-3d;
+                        -webkit-transition-property: -webkit-transform;
+                        -webkit-transition-duration: 0.55s;
+            }
+                    .triangle1hidden {
+                        opacity: 1;
+                        position: absolute;
+                        top: 60px;
+                        left: 20px;
+                        width: 0;
+                        max-height: 0;
+                        border-left: 140px solid transparent;
+                        border-right: 140px solid transparent;
+                        border-top: 140px solid #98bce0;
+                        -webkit-transform-style: preserve-3d;
+                        -webkit-transition-property: -webkit-transform;
+                        -webkit-transition-duration: 0.55s;
+                        
+                        visibility: hidden;
+                    }
+                    
+                    .triangle1.rollUp {
+                        
+                   top: -150px;
+                   -webkit-animation: toTop .7s ease;
+                        
+                        // -webkit-transform: rotate(360deg);
+
+
+                    }
+                    .triangle1.rollUp2 {
+                          top: 60px;
+                        -webkit-animation: toTop2 1.3s ease;
+
+ // -webkit-transform: rotate(360deg);
+                    }
+                    
+                    @-webkit-keyframes toTop {
+                        0%   {
+                            top: 60px;
+                            
+                        }
+                        100%   {
+                            top: -150px;
+                        }
+                        
+                    }
+                    @-webkit-keyframes toTop2 {
+                        0%   {
+                               top: -150px;
+                         
+                            
+                        }
+                        100%   {
+                            top: 60px;
+                            
+                            // -webkit-transform: rotate(360deg);
+                            
+
+                        }
+                        
+                    }
+                    .triangle1next {
+                        position: absolute;
+                        top: 60px;
+                        left: 20px;
+                        width: 0;
+                        max-height: 0;
+                        border-left: 140px solid transparent;
+                        border-right: 140px solid transparent;
+                        border-top: 140px solid #f9ad2a;
+                       
+                        z-index: -1;
+                        
+                        
+                    }
+                    .triangle1next.rollUp {
+                        
+                        top: -150px;
+                        -webkit-animation: toTop .6s ease;
+                        
+                       // -webkit-transform: rotate(360deg);
+                        
+                    }
+                    .triangle1next.rollUp2 {
+                        top: 60px;
+                        -webkit-animation: toTop2 1.3s ease;
+                        
+                        // -webkit-transform: rotate(360deg);
+                    }
+                    .triangle2 {
+                        
+                        position: absolute;
+                        top: 60px;
+                        left: 160px;
+                        width: 0;
+                        max-height: 0;
+                        border-top: 140px solid transparent;
+                        border-right: 140px solid #83c9fd;
+                        border-bottom: 140px solid transparent;
+                        
+                        -webkit-transform-style: preserve-3d;
+                        -webkit-transition-property: -webkit-transform;
+                        -webkit-transition-duration: 0.55s;
+                        
+                        
+                    }
+                    
+                    .triangle2hidden {
+                        
+                        position: absolute;
+                        top: 60px;
+                        left: 160px;
+                        width: 0;
+                        max-height: 0;
+                        border-top: 140px solid transparent;
+                        border-right: 140px solid #98bce0;
+                        border-bottom: 140px solid transparent;
+                        
+                        -webkit-transform-style: preserve-3d;
+                        -webkit-transition-property: -webkit-transform;
+                        -webkit-transition-duration: 0.55s;
+                        
+                        visibility: hidden;
+                    }
+
+                    
+                    
+                    
+                      
+                    .triangle2.rollRight  {
+                        
+                        left: 370px;
+                        -webkit-animation: toRight .8s ease;
+                        
+                        // -webkit-transform: rotate(360deg);
+                        
+
+                                            }
+                    
+                    .triangle2.rollRight2  {
+                        
+                        left: 160px;
+                        
+                        // -webkit-transform: rotate(360deg);
+                        -webkit-animation: toRight2 .8s ease;
+                    }
+                    
+                    @-webkit-keyframes toRight {
+                        0%   {
+                            left: 160px;
+                            
+                        }
+                        100%   {
+                           left: 370px;
+                        }
+                        
+                    }
+                    
+                    @-webkit-keyframes toRight2 {
+                        0%   {
+                            left: 370px; 
+                            
+                        }
+                        100%   {
+                            left:160px;
+                            
+                            // -webkit-transform: rotate(360deg);
+                            
+
+                        }
+                        
+                    }
+                    .triangle2next {
+                        
+                        position: absolute;
+                        top: 60px;
+                        left: 160px;
+                        width: 0;
+                        max-height: 0;
+                        border-top: 140px solid transparent;
+                        border-right: 140px solid #fc7c7e;
+                        border-bottom: 140px solid transparent;
+                        z-index: -1;
+                        
+                        
+                    }
+                    
+                    .triangle2next.rollRight {
+                         left: 370px;
+                      
+                        -webkit-animation: toRight .4s ease;
+                        
+                       // -webkit-transform: rotate(360deg);
+                    }
+                    .triangle2next.rollRight2 {
+                         left: 160px;
+                       
+                        -webkit-animation: toRight2 .4s ease;
+                        
+                       // -webkit-transform: rotate(360deg);
+                    }
+                    .triangle3 {
+                        position: absolute;
+                        top: 200px;
+                        left: 20px;
+                        width: 0;
+                        max-height: 0;
+                        border-left: 140px solid transparent;
+                        border-right: 140px solid transparent;
+                        border-bottom: 140px solid #f4e443;
+                        -webkit-transform-style: preserve-3d;
+                        -webkit-transition-property: -webkit-transform;
+                        -webkit-transition-duration: 0.55s;
+                        
+                        
+                    }
+                    
+                    .triangle3hidden {
+                        position: absolute;
+                        top: 200px;
+                        left: 20px;
+                        width: 0;
+                        max-height: 0;
+                        border-left: 140px solid transparent;
+                        border-right: 140px solid transparent;
+                        border-bottom: 140px solid #98bce0;
+                        -webkit-transform-style: preserve-3d;
+                        -webkit-transition-property: -webkit-transform;
+                        -webkit-transition-duration: 0.55s;
+                        
+                        
+                        visibility: hidden;
+                    }
+                    .triangle3.rollDown {
+                        
+                        top: 770px;
+                        -webkit-animation: toDown .8s ease;
+                        
+                        // -webkit-transform: rotate(360deg);
+                        
+
+                        
+                    }
+                    .triangle3.rollDown2 {
+                        
+                         top: 200px;
+                        -webkit-animation: toDown2 .8s ease;
+                        
+                        
+                       // -webkit-transform: rotate(360deg);
+                    }
+                    @-webkit-keyframes toDown {
+                        0%   {
+                            top: 200px;
+                            
+                        }
+                        100%   {
+                            top: 770px;
+                        }
+                        
+                    }
+                    @-webkit-keyframes toDown2 {
+                        0%   {
+                            top: 700px;
+                            
+                        }
+                        100%   {
+                            top: 200px;
+                            
+                            // -webkit-transform: rotate(360deg);
+                            
+
+                        }
+                        
+                    }
+                    .triangle3next {
+                        
+                        position: absolute;
+                        top: 200px;
+                        left: 20px;
+                        width: 0;
+                        max-height: 0;
+                        border-left: 140px solid transparent;
+                        border-right: 140px solid transparent;
+                        border-bottom: 140px solid #e3a8fd;
+                        z-index: -1;
+                        
+                        
+                                           }
+                    .triangle3next.rollDown {
+                        
+                        top: 770px;
+                        -webkit-animation: toDown .8s ease;
+                        
+                        // -webkit-transform: rotate(360deg);
+                        
+
+                    }
+                    .triangle3next.rollDown2 {
+                         top: 200px;
+                        -webkit-animation: toDown2 .8s ease;
+                        
+                        // -webkit-transform: rotate(360deg);
+                        
+
+                    }
+                    .triangle4 {
+                        position: absolute;
+                        top: 60px;
+                        left: 20px;
+                        width: 0;
+                        max-height: 0;
+                        border-top: 140px solid transparent;
+                        border-left: 140px solid #b5df36;
+                        border-bottom: 140px solid transparent;
+                        -webkit-transform-style: preserve-3d;
+                        -webkit-transition-property: -webkit-transform;
+                        -webkit-transition-duration: 0.55s;
+                        
+                        
+                    }
+                    
+                    .triangle4hidden {
+                        position: absolute;
+                        top: 60px;
+                        left: 20px;
+                        width: 0;
+                        max-height: 0;
+                        border-top: 140px solid transparent;
+                        border-left: 140px solid #98bce0;
+                        border-bottom: 140px solid transparent;
+                        -webkit-transform-style: preserve-3d;
+                        -webkit-transition-property: -webkit-transform;
+                        -webkit-transition-duration: 0.55s;
+                        visibility : hidden;
+                       
+                        
+                    }
+                    
+                    
+                    
+                    .triangle4.rollLeft {
+                        
+                        left: -200px;
+                        -webkit-animation: toLeft .8s ease;
+                  }
+                    .triangle4.rollLeft2 {
+                        
+                      left: 20px;
+                        -webkit-animation: toLeft2 .8s ease;
+                        
+                       // -webkit-transform: rotate(360deg);
+                    }
+                    @-webkit-keyframes toLeft {
+                        0%   {
+                            left: 20px;
+
+                            
+                        }
+                        100%   {
+                            left: -200px;
+                           // -webkit-transform: rotate(360deg);
+                        }
+                        
+                    }
+                    @-webkit-keyframes toLeft2 {
+                        0%   {
+                           
+                             left: -200px;
+                            
+                        }
+                        100%   {
+                            left: 20px;
+                            
+                           // -webkit-transform: rotate(360deg);
+                        }
+                        
+                    }
+                    .triangle4next {
+                        position: absolute;
+                        top: 60px;
+                        left: 20px;
+                        width: 0;
+                        max-height: 0;
+                        border-top: 140px solid transparent;
+                        border-left: 140px solid #e3a8fd;
+                        border-bottom: 140px solid transparent;
+                        z-index: -1;
+                        
+                        
+                    }
+                    
+                    .triangle4next.rollLeft {
+                        
+                        left: -200px;
+                        -webkit-animation: toLeft .8s ease;
+                        
+                       // -webkit-transform: rotate(360deg);
+                    }
+                    
+                    .triangle4next.rollLeft2 {
+                        
+                        left: 20px;
+                        -webkit-animation: toLeft2 .8s ease;
+                        
+                       // -webkit-transform: rotate(360deg);
+                    }
+                    
+                    
+                    
+                    
+                    
+                    .triangle1.flipCard1
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:50% 100%;
+                        -webkit-transform: rotate3d(45, -45, 0, -180deg);
+                    }
+                    .triangle1.flipCard2
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:50% 100%;
+                        -webkit-transform: rotate3d(1, 0, 0, -180deg);
+                        
+                    }
+                    .triangle1.flipCard3
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:50% 100%;
+                        -webkit-transform: rotate3d(45, 45, 0, -180deg);
+                        
+                    }
+                    .triangle2.flipCard4
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:50% 75%;
+                        -webkit-transform: rotate3d(45, 45, 0, -180deg);
+                    }
+                    .triangle2.flipCard5
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:0% 0%;
+                        -webkit-transform: rotate3d(0, 45, 0, -180deg);
+                        
+                    }
+                    .triangle2.flipCard6
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:100% 0%;
+                        -webkit-transform: rotate3d(45, -45, 0, 180deg);
+                        
+                    }
+                    .triangle3.flipCard7
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:0% 100%;
+                        -webkit-transform: rotate3d(-45, 45, 0, -180deg);
+                    }
+                    .triangle3.flipCard8
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:100% 0%;
+                        -webkit-transform: rotate3d(1, 0, 0, 180deg);
+                    }
+                    .triangle3.flipCard9
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:100% 100%;
+                        -webkit-transform: rotate3d(1, 1, 0, 180deg);
+                    }
+                    .triangle4.flipCard10
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:0% 0%;
+                        -webkit-transform: rotate3d(45, 45, 0, 180deg);
+                    }
+                    .triangle4.flipCard11
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:100% 0%;
+                        -webkit-transform: rotate3d(0, 45, 0, 180deg);
+                    }
+                    .triangle4.flipCard12
+                    {
+                        z-index: 2;
+                        -webkit-transform-origin:0% 100%;
+                        -webkit-transform: rotate3d(-45, 45, 0, 180deg);
+                    }
+                    
+                    
+                    
+                  /*  .square {
+                        
+                        top: 60px;
+                        left: 20px;
+                        width: 280px;
+                        height: 280px;
+                        background:  #b5df36;
+                        position: absolute;
+                        z-index: -10;
+                    }
+                    
+                    
+                    img {
+                        position: absolute;
+                        top: 60px;
+                        left: 20px;
+                        width: 280px;
+                        height: 280px;
+                        
+                    }​
+                    */
+                    
+                    </style>
+                <script type="text/javascript">
+                    
+                    
+                    function initListener() {
+                        
+                        
+                        //alert('initListener');
+                        document.addEventListener("webKitTransitionEnd", touchHandler, false);
+                        document.addEventListener("webkitAnimationEnd", touchHandler, false);
+                        
+                        
+                        
+                    }
+                    function touchHandler(event) {
+                        alert('webKitTransitionEnd');
+                        window.location = "app://TransitionFinished";
+                        
+                    }
+                    
+                    function moveLevel(argument1) {
+                        document.getElementById('levelText').innerHTML = argument1;
+                        // document.getElementById('levelText').innerHTML = 'q';
+                        
+                        document.getElementsByClassName('levelText')[0].classList.remove('moveLevel');
+                        document.getElementsByClassName('levelText')[0].offsetWidth = document.getElementsByClassName('levelText')[0].offsetWidth;
+                        
+                        setTimeout(function() { document.getElementsByClassName('levelText')[0].classList.add('moveLevel'); }, 1000);
+                    }
+                    function moveScore(argument2) {
+                        document.getElementById('scoreText').innerHTML = argument2;
+                        // document.getElementById('levelText').innerHTML = 'q';
+                        
+                        document.getElementsByClassName('scoreText')[0].classList.remove('moveText');
+                        document.getElementsByClassName('scoreText')[0].offsetWidth = document.getElementsByClassName('scoreText')[0].offsetWidth;
+                        
+                        setTimeout(function() { document.getElementsByClassName('scoreText')[0].classList.add('moveText'); }, 1300);
+                    }
+                    function moveText() {    
+                        
+                        document.getElementsByClassName('scoreText')[0].classList.remove('moveText');
+                        document.getElementsByClassName('scoreText')[0].offsetWidth = document.getElementsByClassName('scoreText')[0].offsetWidth;
+                        
+                        document.getElementsByClassName('scoreText')[0].classList.add('moveText');
+                    }
+                    // флип сверху направо
+                    function flipCard1() {
+                        //document.getElementById('Id'').style.visibility = "visible";
+                        
+                        
+                        //  document.getElementById('Id').class = "newClass";
+                        document.getElementsByClassName('BareFeet1')[0].classList.remove('flipCard1');
+                        document.getElementsByClassName('BareFeet2')[0].classList.remove('flipCard1a');
+                        
+                        
+                        
+                        //    
+                        document.getElementsByClassName('triangle1')[0].classList.add('flipCard1');
+                        setTimeout(function() { document.getElementsByClassName('BareFeet1')[0].classList.add('flipCard1'); }, 50);
+                        
+                        
+                        setTimeout(function() { document.getElementsByClassName('BareFeet2')[0].classList.add('flipCard1a'); }, 300);
+                        
+                        
+                    }
+                    
+                    // флип сверху вниз
+                    function flipCard2() {
+                        //  alert('flipCard2');
+                        // document.getElementsByClassName('BareFeet')[0]..style.webkitTransitionDelay = '-10s'
+                        //  document.getElementsByClassName('BareFeet')[0]..style.webkitTransform = 'tra//NSLate3d(0,0,0)';
+                        // document.getElementsByClassName('BareFeet1')[0].classList.remove('flipCard1');
+                        // document.getElementsByClassName('BareFeet2')[0].classList.remove('flipCard1a');
+                        document.getElementsByClassName('BareFeet3')[0].classList.remove('flipCard2');
+                        document.getElementsByClassName('BareFeet4')[0].classList.remove('flipCard2a');
+                        
+                        //
+                        document.getElementsByClassName('triangle1')[0].classList.add('flipCard2');
+                        setTimeout(function() { document.getElementsByClassName('BareFeet3')[0].classList.add('flipCard2'); }, 50);
+                        
+                        
+                        setTimeout(function() { document.getElementsByClassName('BareFeet4')[0].classList.add('flipCard2a'); }, 300);
+                        
+                        
+                        
+                    }
+                    
+                    
+                    // флип сверху налево
+                    function flipCard3() {
+                        
+                        document.getElementsByClassName('BareFeet5')[0].classList.remove('flipCard3');
+                        document.getElementsByClassName('BareFeet6')[0].classList.remove('flipCard3a');
+                        
+                        document.getElementsByClassName('triangle1')[0].classList.add('flipCard3');
+                        setTimeout(function() { document.getElementsByClassName('BareFeet5')[0].classList.add('flipCard3'); }, 50);
+                        setTimeout(function() { document.getElementsByClassName('BareFeet6')[0].classList.add('flipCard3a'); }, 300);
+                        
+                        
+                    }
+                    
+                    
+                    // флип справо вниз
+                    function flipCard4() {
+                        //alert('flipCard4');
+                        document.getElementsByClassName('BareFeet7')[0].classList.remove('flipCard4');
+                        document.getElementsByClassName('BareFeet8')[0].classList.remove('flipCard4a');
+                        
+                        
+                        
+                        document.getElementsByClassName('triangle2')[0].classList.add('flipCard4');
+                        
+                        setTimeout(function() { document.getElementsByClassName('BareFeet7')[0].classList.add('flipCard4'); }, 50);
+                        setTimeout(function() { document.getElementsByClassName('BareFeet8')[0].classList.add('flipCard4a'); }, 300);
+                    }
+                    
+                    // флип справо налево
+                    function flipCard5() {
+                        // alert('flipCard5');
+                        document.getElementsByClassName('BareFeet9')[0].classList.remove('flipCard5');
+                        document.getElementsByClassName('BareFeet10')[0].classList.remove('flipCard5a');
+                        document.getElementsByClassName('triangle2')[0].classList.add('flipCard5');
+                        setTimeout(function() { document.getElementsByClassName('BareFeet9')[0].classList.add('flipCard5'); }, 50);
+                        setTimeout(function() { document.getElementsByClassName('BareFeet10')[0].classList.add('flipCard5a'); }, 300);
+                    }
+                    
+                    
+                    // флип справо вверх
+                    function flipCard6() {
+                        document.getElementsByClassName('BareFeet11')[0].classList.remove('flipCard6');
+                        document.getElementsByClassName('BareFeet12')[0].classList.remove('flipCard6a');
+                        document.getElementsByClassName('triangle2')[0].classList.add('flipCard6');
+                        setTimeout(function() { document.getElementsByClassName('BareFeet11')[0].classList.add('flipCard6'); }, 50);
+                        setTimeout(function() { document.getElementsByClassName('BareFeet12')[0].classList.add('flipCard6a'); }, 300);
+                    }
+                    
+                    
+                    // флип снизу направо
+                    function flipCard7() {
+                        
+                        document.getElementsByClassName('BareFeet13')[0].classList.remove('flipCard7');
+                        document.getElementsByClassName('BareFeet14')[0].classList.remove('flipCard7a');
+                        document.getElementsByClassName('triangle3')[0].classList.add('flipCard7');
+                        setTimeout(function() { document.getElementsByClassName('BareFeet13')[0].classList.add('flipCard7'); }, 50);
+                        setTimeout(function() { document.getElementsByClassName('BareFeet14')[0].classList.add('flipCard7a'); }, 300);
+                    }
+                    
+                    
+                    // -------------------------------------
+                    
+                    // флип снизу вверх
+                    function flipCard8() {
+                        document.getElementsByClassName('BareFeet15')[0].classList.remove('flipCard8');
+                        document.getElementsByClassName('BareFeet16')[0].classList.remove('flipCard8a');
+                        document.getElementsByClassName('triangle3')[0].classList.add('flipCard8');
+                        setTimeout(function() { document.getElementsByClassName('BareFeet15')[0].classList.add('flipCard8'); }, 50);
+                        setTimeout(function() { document.getElementsByClassName('BareFeet16')[0].classList.add('flipCard8a'); }, 300);
+                    }
+                    
+                    
+                    // флип снизу направо
+                    function flipCard9() {
+                        document.getElementsByClassName('BareFeet17')[0].classList.remove('flipCard9');
+                        document.getElementsByClassName('BareFeet18')[0].classList.remove('flipCard9a');
+                        document.getElementsByClassName('triangle3')[0].classList.add('flipCard9');
+                        setTimeout(function() { document.getElementsByClassName('BareFeet17')[0].classList.add('flipCard9'); }, 50);
+                        setTimeout(function() { document.getElementsByClassName('BareFeet18')[0].classList.add('flipCard9a'); }, 300);
+                    }
+                    
+                    
+                    function flipCard10() {
+                        
+                        
+                        // флип слево на вверх
+                        document.getElementsByClassName('BareFeet19')[0].classList.remove('flipCard10');
+                        document.getElementsByClassName('BareFeet20')[0].classList.remove('flipCard10a');
+                        document.getElementsByClassName('triangle4')[0].classList.add('flipCard10');
+                        setTimeout(function() { document.getElementsByClassName('BareFeet19')[0].classList.add('flipCard10'); }, 50);
+                        setTimeout(function() { document.getElementsByClassName('BareFeet20')[0].classList.add('flipCard10a'); }, 300);
+                    }
+                    
+                    // флип слево направо
+                    function flipCard11() {
+                        document.getElementsByClassName('BareFeet21')[0].classList.remove('flipCard11');
+                        document.getElementsByClassName('BareFeet22')[0].classList.remove('flipCard11a');
+                        document.getElementsByClassName('triangle4')[0].classList.add('flipCard11');
+                        setTimeout(function() { document.getElementsByClassName('BareFeet21')[0].classList.add('flipCard11'); }, 50);
+                        setTimeout(function() { document.getElementsByClassName('BareFeet22')[0].classList.add('flipCard11a'); }, 300);
+                    }
+                    
+                    // флип слево вниз
+                    function flipCard12() {
+                        document.getElementsByClassName('BareFeet23')[0].classList.remove('flipCard12');
+                        document.getElementsByClassName('BareFeet24')[0].classList.remove('flipCard12a');
+                        document.getElementsByClassName('triangle4')[0].classList.add('flipCard12');
+                        setTimeout(function() { document.getElementsByClassName('BareFeet23')[0].classList.add('flipCard12'); }, 50);
+                        setTimeout(function() { document.getElementsByClassName('BareFeet24')[0].classList.add('flipCard12a'); }, 300);
+                    }
+                    
+                    
+function growDiv() {
+ //alert('growDiv');
+    
+    document.getElementById('BareFeet1').style.visibility = 'hidden';
+    document.getElementById('BareFeet2').style.visibility = 'hidden';
+    document.getElementById('BareFeet3').style.visibility = 'hidden';
+    document.getElementById('BareFeet4').style.visibility = 'hidden';
+    document.getElementById('BareFeet5').style.visibility = 'hidden';
+    document.getElementById('BareFeet6').style.visibility = 'hidden';
+    document.getElementById('BareFeet7').style.visibility = 'hidden';
+    document.getElementById('BareFeet8').style.visibility = 'hidden';
+    document.getElementById('BareFeet9').style.visibility = 'hidden';
+    document.getElementById('BareFeet10').style.visibility = 'hidden';
+    document.getElementById('BareFeet11').style.visibility = 'hidden';
+    document.getElementById('BareFeet12').style.visibility = 'hidden';
+    document.getElementById('BareFeet13').style.visibility = 'hidden';
+    document.getElementById('BareFeet14').style.visibility = 'hidden';
+    document.getElementById('BareFeet15').style.visibility = 'hidden';
+    document.getElementById('BareFeet16').style.visibility = 'hidden';
+    document.getElementById('BareFeet17').style.visibility = 'hidden';
+    document.getElementById('BareFeet18').style.visibility = 'hidden';
+    document.getElementById('BareFeet19').style.visibility = 'hidden';
+    document.getElementById('BareFeet20').style.visibility = 'hidden';
+    document.getElementById('BareFeet21').style.visibility = 'hidden';
+    document.getElementById('BareFeet22').style.visibility = 'hidden';
+    document.getElementById('BareFeet23').style.visibility = 'hidden';
+    document.getElementById('BareFeet24').style.visibility = 'hidden';
+    
+    
+
+        setTimeout(function() { document.getElementsByClassName('triangle1')[0].classList.add('rollUp'); }, 50);
+    
+    setTimeout(function() { document.getElementsByClassName('triangle1next')[0].classList.add('rollUp'); }, 400);
+    
+    setTimeout(function() { document.getElementsByClassName('triangle2')[0].classList.add('rollRight'); }, 100);
+    
+    setTimeout(function() { document.getElementsByClassName('triangle2next')[0].classList.add('rollRight'); }, 500);
+    
+      setTimeout(function() { document.getElementsByClassName('triangle3')[0].classList.add('rollDown'); }, 200);
+    
+    setTimeout(function() { document.getElementsByClassName('triangle3next')[0].classList.add('rollDown'); }, 600);
+    
+   setTimeout(function() { document.getElementsByClassName('triangle4')[0].classList.add('rollLeft'); }, 300);
+   setTimeout(function() { document.getElementsByClassName('triangle4next')[0].classList.add('rollLeft'); }, 700);
+  }
+                    
+function newLevel2 () {
+    setTimeout(function() { document.getElementsByClassName('triangle1')[0].classList.add('rollUp2'); }, 1010);
+    
+    setTimeout(function() { document.getElementsByClassName('triangle1next')[0].classList.add('rollUp2'); }, 1400);
+    
+    setTimeout(function() { document.getElementsByClassName('triangle2')[0].classList.add('rollRight2'); }, 1100);
+    
+    setTimeout(function() { document.getElementsByClassName('triangle2next')[0].classList.add('rollRight2'); }, 1500);
+    
+    setTimeout(function() { document.getElementsByClassName('triangle3')[0].classList.add('rollDown2'); }, 1200);
+    
+    setTimeout(function() { document.getElementsByClassName('triangle3next')[0].classList.add('rollDown2'); }, 1600);
+    
+    setTimeout(function() { document.getElementsByClassName('triangle4')[0].classList.add('rollLeft2'); }, 1300);
+    setTimeout(function() { document.getElementsByClassName('triangle4next')[0].classList.add('rollLeft2'); }, 1700);
+ 
+}
+                    
+function newLevel () {
+    
+ document.getElementsByClassName('triangle1')[0].classList.remove('rollUp');
+    
+    document.getElementsByClassName('triangle1')[0].offsetWidth = document.getElementsByClassName('triangle1')[0].offsetWidth;
+    
+    document.getElementsByClassName('triangle1')[0].classList.remove('rollUp2');
+    
+    document.getElementsByClassName('triangle1')[0].offsetWidth = document.getElementsByClassName('triangle1')[0].offsetWidth;
+     
+    document.getElementsByClassName('triangle1')[0].offsetWidth = document.getElementsByClassName('triangle1')[0].offsetWidth;
+
+       
+    document.getElementsByClassName('triangle1next')[0].classList.remove('rollUp');
+     document.getElementsByClassName('triangle1next')[0].offsetWidth = document.getElementsByClassName('triangle1next')[0].offsetWidth;
+    
+    document.getElementsByClassName('triangle1next')[0].classList.remove('rollUp2');
+    document.getElementsByClassName('triangle1next')[0].offsetWidth = document.getElementsByClassName('triangle1next')[0].offsetWidth;
+    
+    document.getElementsByClassName('triangle2')[0].classList.remove('rollRight');
+    document.getElementsByClassName('triangle2')[0].offsetWidth = document.getElementsByClassName('triangle2')[0].offsetWidth;
+    
+    document.getElementsByClassName('triangle2')[0].classList.remove('rollRight2');
+    document.getElementsByClassName('triangle2')[0].offsetWidth = document.getElementsByClassName('triangle2')[0].offsetWidth;
+    
+    document.getElementsByClassName('triangle2next')[0].classList.remove('rollRight');
+    document.getElementsByClassName('triangle2next')[0].offsetWidth = document.getElementsByClassName('triangle2next')[0].offsetWidth;
+    
+    document.getElementsByClassName('triangle2next')[0].classList.remove('rollRight2');
+    document.getElementsByClassName('triangle2next')[0].offsetWidth = document.getElementsByClassName('triangle2next')[0].offsetWidth;
+    
+    document.getElementsByClassName('triangle3')[0].classList.remove('rollDown');
+    document.getElementsByClassName('triangle3')[0].classList.remove('rollDown2');
+    document.getElementsByClassName('triangle3')[0].offsetWidth = document.getElementsByClassName('triangle3')[0].offsetWidth;
+    
+    document.getElementsByClassName('triangle3next')[0].classList.remove('rollDown');
+    document.getElementsByClassName('triangle3next')[0].classList.remove('rollDown2');
+    document.getElementsByClassName('triangle3next')[0].offsetWidth = document.getElementsByClassName('triangle3next')[0].offsetWidth;
+    
+ document.getElementsByClassName('triangle4')[0].classList.remove('rollLeft');
+    document.getElementsByClassName('triangle4')[0].offsetWidth = document.getElementsByClassName('triangle4')[0].offsetWidth;
+    
+
+    document.getElementsByClassName('triangle4')[0].classList.remove('rollLeft2');
+    document.getElementsByClassName('triangle4')[0].offsetWidth = document.getElementsByClassName('triangle4')[0].offsetWidth;
+
+    document.getElementsByClassName('triangle4next')[0].classList.remove('rollLeft');
+     document.getElementsByClassName('triangle4next')[0].offsetWidth = document.getElementsByClassName('triangle4next')[0].offsetWidth;
+    document.getElementsByClassName('triangle4next')[0].classList.remove('rollLeft2');
+    document.getElementsByClassName('triangle4next')[0].offsetWidth = document.getElementsByClassName('triangle4next')[0].offsetWidth;
+    
+    
+    document.getElementById('BareFeet1').style.visibility = 'visible';
+    document.getElementById('BareFeet2').style.visibility = 'visible';
+    document.getElementById('BareFeet3').style.visibility = 'visible';
+    document.getElementById('BareFeet4').style.visibility = 'visible';
+    document.getElementById('BareFeet5').style.visibility = 'visible';
+    document.getElementById('BareFeet6').style.visibility = 'visible';
+    document.getElementById('BareFeet7').style.visibility = 'visible';
+    document.getElementById('BareFeet8').style.visibility = 'visible';
+    document.getElementById('BareFeet9').style.visibility = 'visible';
+    document.getElementById('BareFeet10').style.visibility = 'visible';
+    document.getElementById('BareFeet11').style.visibility = 'visible';
+    document.getElementById('BareFeet12').style.visibility = 'visible';
+    document.getElementById('BareFeet13').style.visibility = 'visible';
+    document.getElementById('BareFeet14').style.visibility = 'visible';
+    document.getElementById('BareFeet15').style.visibility = 'visible';
+    document.getElementById('BareFeet16').style.visibility = 'visible';
+    document.getElementById('BareFeet17').style.visibility = 'visible';
+    document.getElementById('BareFeet18').style.visibility = 'visible';
+    document.getElementById('BareFeet19').style.visibility = 'visible';
+    document.getElementById('BareFeet20').style.visibility = 'visible';
+    document.getElementById('BareFeet21').style.visibility = 'visible';
+    document.getElementById('BareFeet22').style.visibility = 'visible';
+    document.getElementById('BareFeet23').style.visibility = 'visible';
+    document.getElementById('BareFeet24').style.visibility = 'visible';
+    
+    
+}
+                    
+                    </script>
+    </head>
+    <body  bgcolor="#6090c0">
+        <!-- Colors: #fc7c7e красный 2, #b5df36 зеленый 1, #f4e443 желтый 1 , #83c9fd голубой 1,  #f9ad2a оранжевый 1, #e3a8fd нежно сиреневый - 1, 
+         #c8c8c8 / -->
+        
+                 <div class="BareFeet1" id="BareFeet1"></div>  
+                <div class="BareFeet2" id="BareFeet2"></div>
+                <div class="BareFeet3" id="BareFeet3"></div>
+                <div class="BareFeet4" id="BareFeet4"></div>
+                <div class="BareFeet5" id="BareFeet5"></div>
+                <div class="BareFeet6" id="BareFeet6"></div>
+                <div class="BareFeet7" id="BareFeet7"></div>
+                <div class="BareFeet8" id="BareFeet8"></div>
+                <div class="BareFeet9" id="BareFeet9"></div>
+                <div class="BareFeet10" id="BareFeet10"></div>
+                <div class="BareFeet11" id="BareFeet11"></div>
+                <div class="BareFeet12" id="BareFeet12"></div>
+                <div class="BareFeet13" id="BareFeet13"></div>
+                <div class="BareFeet14" id="BareFeet14"></div>
+                <div class="BareFeet15" id="BareFeet15"></div>
+                <div class="BareFeet16" id="BareFeet16"></div>
+                <div class="BareFeet17" id="BareFeet17"></div>
+                <div class="BareFeet18" id="BareFeet18"></div>
+                <div class="BareFeet19" id="BareFeet19"></div>
+                <div class="BareFeet20" id="BareFeet20"></div>
+                <div class="BareFeet21" id="BareFeet21"></div>
+                <div class="BareFeet22" id="BareFeet22"></div> 
+                <div class="BareFeet23" id="BareFeet23"></div>
+                <div class="BareFeet24" id="BareFeet24"></div> 
+        
+        
+                <div class="triangle1" id='triangle1'></div>
+                <div class="triangle1next" id="triangle1next"></div>
+                <div class="triangle2" id='triangle2'></div>
+                <div class="triangle2next" id='triangle2next'></div>
+                <div class="triangle3" id='triangle3' ></div>
+                <div class="triangle3next" id='triangle3next' ></div>
+                <div class="triangle4" id='triangle4'></div>
+                <div class="triangle4next" id='triangle4next'></div>
+        
+        <div class="triangle1hidden" id='triangle1hidden'></div>
+        <div class="triangle2hidden" id='triangle2hidden'></div>
+        <div class="triangle3hidden" id='triangle3hidden' ></div>
+        <div class="triangle4hidden" id='triangle4hidden'></div>
+
+        
+        
+        
+        <div class="scoreText" id="scoreText"></div>
+        <div class="levelText" id="levelText"></div>
+        
+        
+        
+        
+    </body>
+</html>

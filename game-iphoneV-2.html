@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    	<title>Larisa</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		
+		<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		
+	
+		
+		
+		
+		<!-- The CardFlip.css file contains all required information to animate the card -->
+<style type="text/css">
+body 
+{
+    margin: 0px;
+    -webkit-user-select: none;
+}
+ 
+ 
+/* Styles the "Card Flip" page and creates a placeholder for the card */
+#container
+{
+    /* Set these dimensions so the card can be properly displayed in Safari on iPhone */
+    height: 350px;
+    width: 320px;
+    background-color: rgba(56,108,179, 0.5);
+    
+    /* Disable tap highlighting */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    
+    /* Give some depth to the card */
+    -webkit-perspective: 600;
+}
+ 
+ 
+/* Applies 3D transform and transition effects to the card. The card has two states: regular and flipped.
+   A card is in a regular state when there is an empty transform applied to it, and otherwise in a flipped
+   state, where there is a rotational transformation applied. This class is used when the card is in the regular state.
+   The "card flipped" class is used when the card is in the flipped state. 
+*/
+.card 
+{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    left: 60px;
+    top: 28px;
+    
+    /* Ensure that the card lives correctly in 3D space */
+    -webkit-transform-style: preserve-3d;
+    
+    /* We apply this property to the card so it can smoothly flip between its sides */
+    -webkit-transition-property: -webkit-transform;
+    /* Make the animation occur over a period of 1.5 seconds */
+    -webkit-transition-duration: 1.5s;
+}
+ 
+ 
+/* Applies the flip animation to the card */
+
+ 
+.card.flipped
+{
+ 
+    /* Rotate the card 180 degrees along the y-axis. This animation allows the card to
+      toggle between its regular and flipped states. */
+    -webkit-transform: rotateY(180deg);
+}
+
+ 
+/* Styles the card and hides its "back side" when the card is flipped */
+.face 
+{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    /* Give a round layout to the card */
+    -webkit-border-radius: 10px;
+    /* Drop shadow around the card */
+    -webkit-box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+    /* Make sure that users will not be able to select anything on the card */
+    
+    /* We create the card by stacking two div elements at the exact same location. The back of the card 
+       is shown when we rotated the card 180 degrees along the y-axis. Setting this property to hidden
+       ensures that the "back side" is hidden when the card is flipped
+    */
+    -webkit-backface-visibility: hidden;
+}
+ 
+/* Styles the suit characters */
+.face > p 
+{
+    margin-top: 36px;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 92px;
+}
+ 
+ 
+/* Styles the front of the card */
+.front 
+{
+    /* Set the color of the suit characters on the card */
+    color: rgb(78,150,249);
+    /* Background color of this side of the card */
+    background-color: rgb(34,65,108);
+}
+ 
+ 
+/* Styles the back of the card */
+.back 
+{
+    color: rgb(34,65,108);
+    background-color: rgba(78,150,249,0.5);
+    
+    /* Ensure the "back side" is flipped already */
+    -webkit-transform: rotateY(180deg);
+}
+</style>
+
+<!-- The CardFlip.js file triggers transition between both sides of the card -->
+<script type="text/javascript">
+  
+function flip(event)
+{
+	var element = event.currentTarget;
+	/* Toggle the setting of the classname attribute */
+	element.className = (element.className == 'card') ? 'card flipped' : 'card';
+}
+
+</script>
+</head>
+<body>
+	<div id="container" ">
+		<!-- Shows a card with suit characters. We use the ascii table to display these suit characters. -->
+		<div id="card" class="card" onclick="flip(event)" ontouchstart="this.classList.toggle('hover');>
+			<!-- The front and face classes are respectively used to style the front and back of the card -->
+			<!-- Shows the front of the card. Shown when this page initially loads in Safari on iPhone 2.0 or in iPhone simulator. -->
+			<div id="front" class="front face">
+				<p>♠ ♦<br> ♣ ♥</p>
+			</div>
+			<!-- Shows the back of the card. Hidden when this page initially loads in Safari on iPhone 2.0 or in iPhone simulator. -->
+			<div id="back" class="back face">
+				<p>♦ ♠<br> ♥ ♣</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

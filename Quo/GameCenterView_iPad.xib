@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameCenterController">
+            <connections>
+                <outlet property="ShowLeaderboardButton" destination="76" id="Uct-IJ-YGb"/>
+                <outlet property="currentScoreButton" destination="66" id="3fg-eo-zi1"/>
+                <outlet property="doneButton" destination="lHP-cW-Pbh" id="8fT-yc-Odp"/>
+                <outlet property="recordButton" destination="67" id="AW3-mu-L0J"/>
+                <outlet property="scoreInGameCenterButton" destination="75" id="exg-Ra-8wA"/>
+                <outlet property="submitRecordButton" destination="78" id="IzT-L2-eB7"/>
+                <outlet property="submitScoreButton" destination="73" id="h79-f2-Rhi"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHP-cW-Pbh">
+                    <rect key="frame" x="50" y="70" width="668" height="83.5"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="done:" destination="-1" eventType="touchDown" id="xbH-0I-SYO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66">
+                    <rect key="frame" x="50" y="203.5" width="668" height="83.5"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Current score:">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67">
+                    <rect key="frame" x="50" y="337" width="668" height="83.5"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Record: ">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73">
+                    <rect key="frame" x="50" y="603.5" width="668" height="83.5"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Submit Current Score">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="submitScore" destination="-1" eventType="touchDown" id="iIZ-K3-L4R"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75">
+                    <rect key="frame" x="50" y="470.5" width="668" height="83"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Score in Game Center: ">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="76">
+                    <rect key="frame" x="50" y="870.5" width="668" height="83.5"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="10" maxX="0.0" maxY="-10"/>
+                    <state key="normal" title="Show Leaderboard">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="showLeaderboard" destination="-1" eventType="touchDown" id="Z4Y-tB-TJM"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78">
+                    <rect key="frame" x="50" y="737" width="668" height="83.5"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="        Submit Record          ">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="submitRecord" destination="-1" eventType="touchDown" id="2PS-f3-lHg"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.93725490199999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="EQZ-aL-9Uz" firstAttribute="trailing" secondItem="67" secondAttribute="trailing" constant="50" id="1lA-yd-JDA"/>
+                <constraint firstItem="67" firstAttribute="width" secondItem="lHP-cW-Pbh" secondAttribute="width" id="50n-u2-LCV"/>
+                <constraint firstItem="78" firstAttribute="width" secondItem="lHP-cW-Pbh" secondAttribute="width" id="653-sN-dTl"/>
+                <constraint firstItem="76" firstAttribute="height" secondItem="lHP-cW-Pbh" secondAttribute="height" id="8uz-LC-HLC"/>
+                <constraint firstItem="73" firstAttribute="top" secondItem="75" secondAttribute="bottom" constant="50" id="Alu-SA-e6b"/>
+                <constraint firstItem="66" firstAttribute="leading" secondItem="EQZ-aL-9Uz" secondAttribute="leading" constant="50" id="B5P-6s-suN"/>
+                <constraint firstItem="73" firstAttribute="height" secondItem="lHP-cW-Pbh" secondAttribute="height" id="Eyp-gP-5ug"/>
+                <constraint firstItem="lHP-cW-Pbh" firstAttribute="top" secondItem="EQZ-aL-9Uz" secondAttribute="top" constant="50" id="Fsn-1r-lDi"/>
+                <constraint firstItem="EQZ-aL-9Uz" firstAttribute="trailing" secondItem="76" secondAttribute="trailing" constant="50" id="GrK-GG-62R"/>
+                <constraint firstItem="66" firstAttribute="top" secondItem="lHP-cW-Pbh" secondAttribute="bottom" constant="50" id="GwN-wJ-ziW"/>
+                <constraint firstItem="76" firstAttribute="top" secondItem="78" secondAttribute="bottom" constant="50" id="H6k-1F-qsS"/>
+                <constraint firstItem="lHP-cW-Pbh" firstAttribute="leading" secondItem="EQZ-aL-9Uz" secondAttribute="leading" constant="50" id="HI3-EK-lMh"/>
+                <constraint firstItem="78" firstAttribute="height" secondItem="lHP-cW-Pbh" secondAttribute="height" id="LdC-6R-nXX"/>
+                <constraint firstItem="EQZ-aL-9Uz" firstAttribute="trailing" secondItem="lHP-cW-Pbh" secondAttribute="trailing" constant="50" id="NP2-Pf-JbJ"/>
+                <constraint firstItem="75" firstAttribute="width" secondItem="lHP-cW-Pbh" secondAttribute="width" id="QJl-7l-5tj"/>
+                <constraint firstItem="EQZ-aL-9Uz" firstAttribute="trailing" secondItem="66" secondAttribute="trailing" constant="50" id="TT8-yz-Pkl"/>
+                <constraint firstItem="66" firstAttribute="width" secondItem="lHP-cW-Pbh" secondAttribute="width" id="WkO-wz-q1F"/>
+                <constraint firstItem="EQZ-aL-9Uz" firstAttribute="trailing" secondItem="75" secondAttribute="trailing" constant="50" id="XBy-k3-FUd"/>
+                <constraint firstItem="66" firstAttribute="height" secondItem="lHP-cW-Pbh" secondAttribute="height" id="XzO-up-imJ"/>
+                <constraint firstItem="73" firstAttribute="width" secondItem="lHP-cW-Pbh" secondAttribute="width" id="YSa-0f-Ihn"/>
+                <constraint firstItem="67" firstAttribute="height" secondItem="lHP-cW-Pbh" secondAttribute="height" id="bae-vK-hk4"/>
+                <constraint firstItem="73" firstAttribute="leading" secondItem="EQZ-aL-9Uz" secondAttribute="leading" constant="50" id="cOK-kR-PMa"/>
+                <constraint firstItem="67" firstAttribute="leading" secondItem="EQZ-aL-9Uz" secondAttribute="leading" constant="50" id="ei8-QI-LeI"/>
+                <constraint firstItem="75" firstAttribute="top" secondItem="67" secondAttribute="bottom" constant="50" id="fHE-1d-0js"/>
+                <constraint firstItem="76" firstAttribute="leading" secondItem="EQZ-aL-9Uz" secondAttribute="leading" constant="50" id="iOM-Rg-tzB"/>
+                <constraint firstItem="EQZ-aL-9Uz" firstAttribute="bottom" secondItem="76" secondAttribute="bottom" constant="50" id="kXb-QY-YZo"/>
+                <constraint firstItem="75" firstAttribute="height" secondItem="lHP-cW-Pbh" secondAttribute="height" id="kYP-I5-Mhy"/>
+                <constraint firstItem="78" firstAttribute="leading" secondItem="EQZ-aL-9Uz" secondAttribute="leading" constant="50" id="mD9-hP-xpF"/>
+                <constraint firstItem="78" firstAttribute="top" secondItem="73" secondAttribute="bottom" constant="50" id="opV-dp-w7Q"/>
+                <constraint firstItem="76" firstAttribute="width" secondItem="lHP-cW-Pbh" secondAttribute="width" id="qNn-aQ-VHi"/>
+                <constraint firstItem="67" firstAttribute="top" secondItem="66" secondAttribute="bottom" constant="50" id="r1J-yz-eNM"/>
+                <constraint firstItem="EQZ-aL-9Uz" firstAttribute="trailing" secondItem="78" secondAttribute="trailing" constant="50" id="sHK-XX-DvB"/>
+                <constraint firstItem="75" firstAttribute="leading" secondItem="EQZ-aL-9Uz" secondAttribute="leading" constant="50" id="uU4-bV-afa"/>
+                <constraint firstItem="EQZ-aL-9Uz" firstAttribute="trailing" secondItem="73" secondAttribute="trailing" constant="50" id="wTZ-Er-0Vn"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="EQZ-aL-9Uz"/>
+            <point key="canvasLocation" x="35" y="54"/>
+        </view>
+    </objects>
+</document>

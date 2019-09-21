@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<!-- meta name="viewport" content="width=1049, height=1066" / -->
+<meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" / >
+<meta name="format-detection" content="telephone=no">
+<!-- (C) Valeriy PETRENKO. Contact: <a href="mailto:belgweb@gmail.com">belgweb@gmail.com</a>  -->
+<title>Larisa (The Game)</title>
+<style>
+    
+
+* {
+ 
+-webkit-user-select: none; /* Disable selection/Copy of UIWebView */
+}
+
+
+    
+body
+
+ {
+
+
+    -webkit-user-select: none;
+font-family:Arial;
+text-shadow:0 1px 1px rgba(55,55,55,0.4);
+color:#FFFFFF;
+margin:0;
+padding:0;
+}
+ 
+
+
+body  { -webkit-transform-style: preserve-3d; -webkit-perspective: 600px; }
+.card { position: absolute; left: 100px; top: 100px; padding: 50px;
+        height: 200px; width: 100px; border-radius: 10px; border: 1px solid tan;
+        -webkit-backface-visibility: hidden; 
+        -webkit-transition: -webkit-transform 1s;
+}       
+.front { background: seashell; }
+.back  { background: beige; -webkit-transform: rotateY(180deg);}
+</style>
+<script type="text/javascript">
+var state = 1;
+function flipCard() {
+    if (state) {
+        document.getElementById("front").style.webkitTransform="rotateY(-180deg)";    
+        document.getElementById("back").style.webkitTransform="rotateY(0deg)";
+        state = 0;
+    } else {
+        document.getElementById("front").style.webkitTransform="rotateY(0deg)";    
+        document.getElementById("back").style.webkitTransform="rotateY(180deg)";
+        state = 1;
+    }        
+}
+</script>
+</head>
+<body>
+<div class="card back" id="back" onclick="flipCard();">Back of card</div>
+<div class="card front" id="front" onclick="flipCard();">Front of card</div>
+</body>
+</html>

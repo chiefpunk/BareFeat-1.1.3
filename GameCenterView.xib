@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GameCenterController">
+            <connections>
+                <outlet property="ShowLeaderboardButton" destination="63" id="PLm-vD-6Jr"/>
+                <outlet property="currentScoreButton" destination="59" id="65"/>
+                <outlet property="doneButton" destination="yGP-Df-JIw" id="W1w-Ix-w7k"/>
+                <outlet property="recordButton" destination="60" id="66"/>
+                <outlet property="scoreInGameCenterButton" destination="64" id="67"/>
+                <outlet property="submitRecordButton" destination="62" id="B7E-NT-Y2N"/>
+                <outlet property="submitScoreButton" destination="61" id="YeH-Vf-f5v"/>
+                <outlet property="view" destination="27" id="29"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="27">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="436"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62">
+                    <rect key="frame" x="20" y="320" width="280" height="38"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Submit Record">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="submitRecord" destination="-1" eventType="touchDown" id="69"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59">
+                    <rect key="frame" x="20" y="88" width="280" height="38"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Current score: ">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yGP-Df-JIw">
+                    <rect key="frame" x="20" y="30" width="280" height="38"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Done">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="done:" destination="-1" eventType="touchDown" id="WBb-3S-3Cm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64">
+                    <rect key="frame" x="20" y="204" width="280" height="38"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Score in Game Center: ">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60">
+                    <rect key="frame" x="20" y="146" width="280" height="38"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Record: ">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61">
+                    <rect key="frame" x="20" y="262" width="280" height="38"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Submit Current Score">
+                        <color key="titleColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="submitScore" destination="-1" eventType="touchDown" id="68"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63">
+                    <rect key="frame" x="20" y="378" width="280" height="38"/>
+                    <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+                    <state key="normal" title="Show Leaderboard">
+                        <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="showLeaderboard" destination="-1" eventType="touchUpInside" id="70"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.93725490199999995" blue="0.86274509799999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="60" firstAttribute="leading" secondItem="dDX-SP-oDg" secondAttribute="leading" constant="20" id="1CY-eV-c60"/>
+                <constraint firstItem="yGP-Df-JIw" firstAttribute="leading" secondItem="dDX-SP-oDg" secondAttribute="leading" constant="20" id="1UO-a9-EYa"/>
+                <constraint firstItem="59" firstAttribute="top" secondItem="yGP-Df-JIw" secondAttribute="bottom" constant="20" id="6tq-nr-wta"/>
+                <constraint firstItem="61" firstAttribute="top" secondItem="64" secondAttribute="bottom" constant="20" id="95P-Fh-XQ8"/>
+                <constraint firstItem="dDX-SP-oDg" firstAttribute="trailing" secondItem="63" secondAttribute="trailing" constant="20" id="9kx-JT-ayj"/>
+                <constraint firstItem="61" firstAttribute="leading" secondItem="dDX-SP-oDg" secondAttribute="leading" constant="20" id="Abe-Ah-sg5"/>
+                <constraint firstItem="59" firstAttribute="leading" secondItem="dDX-SP-oDg" secondAttribute="leading" constant="20" id="Acs-ao-1Mv"/>
+                <constraint firstItem="63" firstAttribute="top" secondItem="62" secondAttribute="bottom" constant="20" id="BXi-3J-kMS"/>
+                <constraint firstItem="dDX-SP-oDg" firstAttribute="trailing" secondItem="60" secondAttribute="trailing" constant="20" id="C7r-fd-AuY"/>
+                <constraint firstItem="dDX-SP-oDg" firstAttribute="trailing" secondItem="59" secondAttribute="trailing" constant="20" id="CNV-g2-XI9"/>
+                <constraint firstItem="dDX-SP-oDg" firstAttribute="trailing" secondItem="64" secondAttribute="trailing" constant="20" id="ODT-PC-4OD"/>
+                <constraint firstItem="yGP-Df-JIw" firstAttribute="top" secondItem="dDX-SP-oDg" secondAttribute="top" constant="30" id="OLC-Ug-gxn"/>
+                <constraint firstItem="64" firstAttribute="top" secondItem="60" secondAttribute="bottom" constant="20" id="QDW-KS-EZJ"/>
+                <constraint firstItem="60" firstAttribute="top" secondItem="59" secondAttribute="bottom" constant="20" id="S77-Nl-6mJ"/>
+                <constraint firstItem="64" firstAttribute="leading" secondItem="dDX-SP-oDg" secondAttribute="leading" constant="20" id="Tkk-gb-8kD"/>
+                <constraint firstItem="64" firstAttribute="height" secondItem="yGP-Df-JIw" secondAttribute="height" id="V8g-Xn-Vj0"/>
+                <constraint firstItem="59" firstAttribute="height" secondItem="yGP-Df-JIw" secondAttribute="height" id="bP0-jh-NNR"/>
+                <constraint firstItem="63" firstAttribute="height" secondItem="yGP-Df-JIw" secondAttribute="height" id="bl1-yW-Fc9"/>
+                <constraint firstItem="dDX-SP-oDg" firstAttribute="trailing" secondItem="yGP-Df-JIw" secondAttribute="trailing" constant="20" id="gcI-ss-LKA"/>
+                <constraint firstItem="dDX-SP-oDg" firstAttribute="bottom" secondItem="63" secondAttribute="bottom" constant="20" id="hqB-b0-tfI"/>
+                <constraint firstItem="dDX-SP-oDg" firstAttribute="trailing" secondItem="61" secondAttribute="trailing" constant="20" id="kgR-GJ-dpO"/>
+                <constraint firstItem="dDX-SP-oDg" firstAttribute="trailing" secondItem="62" secondAttribute="trailing" constant="20" id="m2s-ms-Qq6"/>
+                <constraint firstItem="61" firstAttribute="height" secondItem="yGP-Df-JIw" secondAttribute="height" id="nLo-C8-X4y"/>
+                <constraint firstItem="63" firstAttribute="leading" secondItem="dDX-SP-oDg" secondAttribute="leading" constant="20" id="qaZ-X0-oFy"/>
+                <constraint firstItem="62" firstAttribute="leading" secondItem="dDX-SP-oDg" secondAttribute="leading" constant="20" id="sht-1c-03A"/>
+                <constraint firstItem="62" firstAttribute="top" secondItem="61" secondAttribute="bottom" constant="20" id="uA7-ct-4nn"/>
+                <constraint firstItem="60" firstAttribute="height" secondItem="yGP-Df-JIw" secondAttribute="height" id="yze-fr-iUI"/>
+                <constraint firstItem="62" firstAttribute="height" secondItem="yGP-Df-JIw" secondAttribute="height" id="zMZ-EI-dlK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="dDX-SP-oDg"/>
+            <point key="canvasLocation" x="34" y="54"/>
+        </view>
+    </objects>
+</document>

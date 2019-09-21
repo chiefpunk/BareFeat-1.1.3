@@ -1,0 +1,644 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		230CA80D18EA27370032954F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 230CA80C18EA27370032954F /* AVFoundation.framework */; };
+		230E6EE7190EDDF7007E94D9 /* zamok.png in Resources */ = {isa = PBXBuildFile; fileRef = 230E6EE5190EDDF7007E94D9 /* zamok.png */; };
+		230E6EE8190EDDF7007E94D9 /* zamok@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 230E6EE6190EDDF7007E94D9 /* zamok@2x.png */; };
+		2313E5CC18E8B0A900755B01 /* Music3.png in Resources */ = {isa = PBXBuildFile; fileRef = 2313E5C918E8B0A900755B01 /* Music3.png */; };
+		2313E5CD18E8B0A900755B01 /* Music3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2313E5CA18E8B0A900755B01 /* Music3@2x.png */; };
+		2316C5B319253507005B78AA /* palec.png in Resources */ = {isa = PBXBuildFile; fileRef = 2316C5B219253507005B78AA /* palec.png */; };
+		2316C5B5192568B8005B78AA /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2316C5B4192568B8005B78AA /* GameKit.framework */; };
+		2320C5001918119400536C9F /* FlipsideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2320C4FF1918119400536C9F /* FlipsideViewController.xib */; };
+		2320C5021918119D00536C9F /* MainViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2320C5011918119D00536C9F /* MainViewController_iPhone.xib */; };
+		2320C50519181A3B00536C9F /* Music2.png in Resources */ = {isa = PBXBuildFile; fileRef = 2320C50319181A3B00536C9F /* Music2.png */; };
+		2320C50619181A3B00536C9F /* Music2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2320C50419181A3B00536C9F /* Music2@2x.png */; };
+		2327770219F808B10059B136 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2327770119F808B10059B136 /* iAd.framework */; };
+		2327770419F8155F0059B136 /* game-ipad.html in Resources */ = {isa = PBXBuildFile; fileRef = 2327770319F8155F0059B136 /* game-ipad.html */; };
+		2327770719F853820059B136 /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2327770619F853820059B136 /* BannerViewController.m */; };
+		233CF95C191D8F5A000524BA /* TableCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 233CF95A191D8F5A000524BA /* TableCellView.m */; };
+		233CF95D191D8F5A000524BA /* TableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233CF95B191D8F5A000524BA /* TableCellView.xib */; };
+		233CF961191D9283000524BA /* ScoresTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 233CF95F191D9282000524BA /* ScoresTableViewController.m */; };
+		233CF962191D9283000524BA /* ScoresTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 233CF960191D9282000524BA /* ScoresTableViewController.xib */; };
+		233E8D7918FE9CD2000ECC05 /* Button-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 233E8D7818FE9CD2000ECC05 /* Button-1@2x.png */; };
+		234BE33118D630110036F213 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 234BE2EF18D630110036F213 /* AppDelegate.m */; };
+		234BE33E18D630110036F213 /* bookmarks.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234BE2FD18D630110036F213 /* bookmarks.plist */; };
+		234BE33F18D630110036F213 /* Button-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 234BE2FE18D630110036F213 /* Button-1.png */; };
+		234BE34618D630110036F213 /* MainViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234BE30818D630110036F213 /* MainViewController_iPad.xib */; };
+		234BE34818D630110036F213 /* OwnPhraseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234BE30C18D630110036F213 /* OwnPhraseViewController.xib */; };
+		234BE34918D630110036F213 /* OwnPhraseViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234BE30E18D630110036F213 /* OwnPhraseViewController_iPad.xib */; };
+		234BE34E18D630110036F213 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234BE31518D630110036F213 /* FlipsideViewController.m */; };
+		234BE34F18D630110036F213 /* InitialDefaults.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234BE31618D630110036F213 /* InitialDefaults.plist */; };
+		234BE35218D630110036F213 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 234BE31918D630110036F213 /* main.m */; };
+		234BE35318D630110036F213 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234BE31B18D630110036F213 /* MainViewController.m */; };
+		234BE35418D630110036F213 /* OwnPhraseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234BE31D18D630110036F213 /* OwnPhraseViewController.m */; };
+		235CBC4319151016009CA131 /* voshebstvo.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 235CBC4219151016009CA131 /* voshebstvo.m4a */; };
+		2385741218EAFCE6000C8A36 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2385741118EAFCE6000C8A36 /* AudioToolbox.framework */; };
+		239D7BE4191BD38A003CA6D7 /* EnterNameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23DE5DBF1918201B0063D6BD /* EnterNameController.m */; };
+		23BC1D57191EE96B002EBB43 /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23BC1D56191EE96B002EBB43 /* Data.plist */; };
+		23C2072E1926D2BF00931EE0 /* GameCenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 23C2072D1926D2BF00931EE0 /* GameCenterManager.m */; };
+		23C5F203190D9C680016D999 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23C5F202190D9C680016D999 /* QuartzCore.framework */; };
+		23C8D37A1929562700B79ADB /* Help1.png in Resources */ = {isa = PBXBuildFile; fileRef = 23C8D3791929562700B79ADB /* Help1.png */; };
+		23D1B6B5191056E200EC3C41 /* blocked.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 23D1B6B4191056E200EC3C41 /* blocked.aiff */; };
+		23D81D3018D50833000483BB /* game-iphoneV.html in Resources */ = {isa = PBXBuildFile; fileRef = 23D81D2F18D50833000483BB /* game-iphoneV.html */; };
+		23D81D3318D50867000483BB /* BimBom2.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23D81D3218D50867000483BB /* BimBom2.caf */; };
+		23D81D3718D5089A000483BB /* tap-flip.caf in Resources */ = {isa = PBXBuildFile; fileRef = 23D81D3618D5089A000483BB /* tap-flip.caf */; };
+		23D81D3918D50A34000483BB /* Feet.png in Resources */ = {isa = PBXBuildFile; fileRef = 23D81D3818D50A34000483BB /* Feet.png */; };
+		23D9570618D50766007222F8 /* BareFeet.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 23D9570518D50766007222F8 /* BareFeet.mp3 */; };
+		23DE5DBE19181FF70063D6BD /* EnterName.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23DE5DBD19181FF70063D6BD /* EnterName.xib */; };
+		23DFA692190FD0490014D18D /* zamokOpen.png in Resources */ = {isa = PBXBuildFile; fileRef = 23DFA690190FD0490014D18D /* zamokOpen.png */; };
+		23DFA693190FD0490014D18D /* zamokOpen@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 23DFA691190FD0490014D18D /* zamokOpen@2x.png */; };
+		23E284A619263A71003C0CFF /* GameCenterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23E284A519263A71003C0CFF /* GameCenterView.xib */; };
+		23E284A919264C85003C0CFF /* GameCenterController.m in Sources */ = {isa = PBXBuildFile; fileRef = 23E284A819264C85003C0CFF /* GameCenterController.m */; };
+		23E98A2720FFAE2900128F06 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23E98A2620FFAE2800128F06 /* Images.xcassets */; };
+		23E98A2C20FFD66100128F06 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23E98A2B20FFD66100128F06 /* Launch Screen.storyboard */; };
+		23FE83622100B74300EC2E9E /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23FE83612100B74300EC2E9E /* SafariServices.framework */; };
+		3C427CE41937E4B700F9FA55 /* FlipsideViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C427CE31937E4B700F9FA55 /* FlipsideViewController_iPad.xib */; };
+		3C427CE61937E53300F9FA55 /* ScoresTableViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C427CE51937E53300F9FA55 /* ScoresTableViewController_iPad.xib */; };
+		3C4F5B9F193A9AA000E7296A /* GameCenterView_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C4F5B9E193A9AA000E7296A /* GameCenterView_iPad.xib */; };
+		3C9C253D19169C48004498DE /* Speaker1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C9C253C19169C48004498DE /* Speaker1.png */; };
+		3CA4967F1935107D00079E05 /* backgroundButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CA4967E1935107D00079E05 /* backgroundButton.png */; };
+		3CDD78171917FB4D00F9E56E /* Speaker1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CDD78161917FB4D00F9E56E /* Speaker1@2x.png */; };
+		8706A91316462F1D00FDB1F6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8706A91216462F1D00FDB1F6 /* UIKit.framework */; };
+		8706A91516462F1D00FDB1F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8706A91416462F1D00FDB1F6 /* Foundation.framework */; };
+		8706A91716462F1D00FDB1F6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8706A91616462F1D00FDB1F6 /* CoreGraphics.framework */; };
+		87F6E3451658B5F900676055 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F6E3441658B5F900676055 /* MessageUI.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		230CA80C18EA27370032954F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		230E6EE5190EDDF7007E94D9 /* zamok.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zamok.png; sourceTree = "<group>"; };
+		230E6EE6190EDDF7007E94D9 /* zamok@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zamok@2x.png"; sourceTree = "<group>"; };
+		2313E5C918E8B0A900755B01 /* Music3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Music3.png; path = Quo/Music3.png; sourceTree = "<group>"; };
+		2313E5CA18E8B0A900755B01 /* Music3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Music3@2x.png"; path = "Quo/Music3@2x.png"; sourceTree = "<group>"; };
+		2316C5B219253507005B78AA /* palec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = palec.png; sourceTree = "<group>"; };
+		2316C5B4192568B8005B78AA /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		2316C5B8192593C2005B78AA /* AppSpecificValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppSpecificValues.h; sourceTree = "<group>"; };
+		2320C4FF1918119400536C9F /* FlipsideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlipsideViewController.xib; sourceTree = "<group>"; };
+		2320C5011918119D00536C9F /* MainViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController_iPhone.xib; sourceTree = "<group>"; };
+		2320C50319181A3B00536C9F /* Music2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Music2.png; path = Quo/Music2.png; sourceTree = "<group>"; };
+		2320C50419181A3B00536C9F /* Music2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Music2@2x.png"; path = "Quo/Music2@2x.png"; sourceTree = "<group>"; };
+		2327770119F808B10059B136 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		2327770319F8155F0059B136 /* game-ipad.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "game-ipad.html"; sourceTree = "<group>"; };
+		2327770519F853730059B136 /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BannerViewController.h; sourceTree = "<group>"; };
+		2327770619F853820059B136 /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BannerViewController.m; sourceTree = "<group>"; };
+		233CF959191D8F5A000524BA /* TableCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableCellView.h; sourceTree = "<group>"; };
+		233CF95A191D8F5A000524BA /* TableCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableCellView.m; sourceTree = "<group>"; };
+		233CF95B191D8F5A000524BA /* TableCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableCellView.xib; path = Quo/TableCellView.xib; sourceTree = "<group>"; };
+		233CF95E191D9282000524BA /* ScoresTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoresTableViewController.h; sourceTree = "<group>"; };
+		233CF95F191D9282000524BA /* ScoresTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoresTableViewController.m; sourceTree = "<group>"; };
+		233CF960191D9282000524BA /* ScoresTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScoresTableViewController.xib; path = Quo/ScoresTableViewController.xib; sourceTree = "<group>"; };
+		233E8D7818FE9CD2000ECC05 /* Button-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Button-1@2x.png"; path = "Quo/Button-1@2x.png"; sourceTree = "<group>"; };
+		234BE2EE18D630110036F213 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		234BE2EF18D630110036F213 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		234BE2F218D630110036F213 /* BareFeet-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "BareFeet-Info.plist"; path = "Quo/BareFeet-Info.plist"; sourceTree = "<group>"; };
+		234BE2F318D630110036F213 /* BareFeet-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "BareFeet-Prefix.pch"; path = "Quo/BareFeet-Prefix.pch"; sourceTree = "<group>"; };
+		234BE2FD18D630110036F213 /* bookmarks.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = bookmarks.plist; path = Quo/bookmarks.plist; sourceTree = "<group>"; };
+		234BE2FE18D630110036F213 /* Button-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Button-1.png"; path = "Quo/Button-1.png"; sourceTree = "<group>"; };
+		234BE31418D630110036F213 /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
+		234BE31518D630110036F213 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		234BE31618D630110036F213 /* InitialDefaults.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = InitialDefaults.plist; path = Quo/InitialDefaults.plist; sourceTree = "<group>"; };
+		234BE31918D630110036F213 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Quo/main.m; sourceTree = "<group>"; };
+		234BE31A18D630110036F213 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		234BE31B18D630110036F213 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		234BE31C18D630110036F213 /* OwnPhraseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OwnPhraseViewController.h; sourceTree = "<group>"; };
+		234BE31D18D630110036F213 /* OwnPhraseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OwnPhraseViewController.m; sourceTree = "<group>"; };
+		235CBC4219151016009CA131 /* voshebstvo.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = voshebstvo.m4a; sourceTree = "<group>"; };
+		2385741118EAFCE6000C8A36 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		23BC1D56191EE96B002EBB43 /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		23C2072C1926D2BF00931EE0 /* GameCenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterManager.h; sourceTree = "<group>"; };
+		23C2072D1926D2BF00931EE0 /* GameCenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterManager.m; sourceTree = "<group>"; };
+		23C5F202190D9C680016D999 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		23C8D3791929562700B79ADB /* Help1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Help1.png; sourceTree = "<group>"; };
+		23D1B6B4191056E200EC3C41 /* blocked.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = blocked.aiff; sourceTree = "<group>"; };
+		23D81D2F18D50833000483BB /* game-iphoneV.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "game-iphoneV.html"; sourceTree = "<group>"; };
+		23D81D3218D50867000483BB /* BimBom2.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BimBom2.caf; sourceTree = "<group>"; };
+		23D81D3618D5089A000483BB /* tap-flip.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "tap-flip.caf"; sourceTree = "<group>"; };
+		23D81D3818D50A34000483BB /* Feet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Feet.png; sourceTree = "<group>"; };
+		23D9570518D50766007222F8 /* BareFeet.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = BareFeet.mp3; sourceTree = "<group>"; };
+		23DE5DBD19181FF70063D6BD /* EnterName.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterName.xib; sourceTree = "<group>"; };
+		23DE5DBF1918201B0063D6BD /* EnterNameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnterNameController.m; sourceTree = "<group>"; };
+		23DE5DC01918201B0063D6BD /* EnterNameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EnterNameController.h; sourceTree = "<group>"; };
+		23DFA690190FD0490014D18D /* zamokOpen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zamokOpen.png; sourceTree = "<group>"; };
+		23DFA691190FD0490014D18D /* zamokOpen@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zamokOpen@2x.png"; sourceTree = "<group>"; };
+		23E284A519263A71003C0CFF /* GameCenterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameCenterView.xib; sourceTree = "<group>"; };
+		23E284A719264C85003C0CFF /* GameCenterController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameCenterController.h; sourceTree = "<group>"; };
+		23E284A819264C85003C0CFF /* GameCenterController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameCenterController.m; sourceTree = "<group>"; };
+		23E98A2620FFAE2800128F06 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BareFeet/Images.xcassets; sourceTree = "<group>"; };
+		23E98A2820FFAE4A00128F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainViewController_iPad.xib; sourceTree = "<group>"; };
+		23E98A2920FFAE4A00128F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OwnPhraseViewController.xib; sourceTree = "<group>"; };
+		23E98A2A20FFAE4A00128F06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/OwnPhraseViewController_iPad.xib; sourceTree = "<group>"; };
+		23E98A2B20FFD66100128F06 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		23FE83612100B74300EC2E9E /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		3C427CE31937E4B700F9FA55 /* FlipsideViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FlipsideViewController_iPad.xib; path = Quo/FlipsideViewController_iPad.xib; sourceTree = "<group>"; };
+		3C427CE51937E53300F9FA55 /* ScoresTableViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScoresTableViewController_iPad.xib; path = Quo/ScoresTableViewController_iPad.xib; sourceTree = "<group>"; };
+		3C4F5B9E193A9AA000E7296A /* GameCenterView_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GameCenterView_iPad.xib; path = Quo/GameCenterView_iPad.xib; sourceTree = "<group>"; };
+		3C9C253C19169C48004498DE /* Speaker1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Speaker1.png; sourceTree = "<group>"; };
+		3CA4967E1935107D00079E05 /* backgroundButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backgroundButton.png; sourceTree = "<group>"; };
+		3CDD78161917FB4D00F9E56E /* Speaker1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Speaker1@2x.png"; sourceTree = "<group>"; };
+		8706A90E16462F1D00FDB1F6 /* BareFeet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BareFeet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8706A91216462F1D00FDB1F6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8706A91416462F1D00FDB1F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8706A91616462F1D00FDB1F6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		87A3043916604A42009B575A /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		87F6E3441658B5F900676055 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8706A90B16462F1D00FDB1F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23FE83622100B74300EC2E9E /* SafariServices.framework in Frameworks */,
+				2327770219F808B10059B136 /* iAd.framework in Frameworks */,
+				2316C5B5192568B8005B78AA /* GameKit.framework in Frameworks */,
+				8706A91716462F1D00FDB1F6 /* CoreGraphics.framework in Frameworks */,
+				23C5F203190D9C680016D999 /* QuartzCore.framework in Frameworks */,
+				2385741218EAFCE6000C8A36 /* AudioToolbox.framework in Frameworks */,
+				230CA80D18EA27370032954F /* AVFoundation.framework in Frameworks */,
+				87F6E3451658B5F900676055 /* MessageUI.framework in Frameworks */,
+				8706A91316462F1D00FDB1F6 /* UIKit.framework in Frameworks */,
+				8706A91516462F1D00FDB1F6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		232B901718E0E81700838966 /* XIB */ = {
+			isa = PBXGroup;
+			children = (
+				2320C5011918119D00536C9F /* MainViewController_iPhone.xib */,
+				234BE30818D630110036F213 /* MainViewController_iPad.xib */,
+				2320C4FF1918119400536C9F /* FlipsideViewController.xib */,
+				3C427CE31937E4B700F9FA55 /* FlipsideViewController_iPad.xib */,
+				23DE5DBD19181FF70063D6BD /* EnterName.xib */,
+				23E284A519263A71003C0CFF /* GameCenterView.xib */,
+				3C4F5B9E193A9AA000E7296A /* GameCenterView_iPad.xib */,
+				234BE30C18D630110036F213 /* OwnPhraseViewController.xib */,
+				234BE30E18D630110036F213 /* OwnPhraseViewController_iPad.xib */,
+				233CF95B191D8F5A000524BA /* TableCellView.xib */,
+				233CF960191D9282000524BA /* ScoresTableViewController.xib */,
+				3C427CE51937E53300F9FA55 /* ScoresTableViewController_iPad.xib */,
+			);
+			name = XIB;
+			sourceTree = "<group>";
+		};
+		234BE2EB18D630110036F213 /* Quo */ = {
+			isa = PBXGroup;
+			children = (
+				2327770519F853730059B136 /* BannerViewController.h */,
+				2327770619F853820059B136 /* BannerViewController.m */,
+				23E284A719264C85003C0CFF /* GameCenterController.h */,
+				23E284A819264C85003C0CFF /* GameCenterController.m */,
+				2316C5B8192593C2005B78AA /* AppSpecificValues.h */,
+				233CF95E191D9282000524BA /* ScoresTableViewController.h */,
+				233CF95F191D9282000524BA /* ScoresTableViewController.m */,
+				233CF959191D8F5A000524BA /* TableCellView.h */,
+				233CF95A191D8F5A000524BA /* TableCellView.m */,
+				234BE31A18D630110036F213 /* MainViewController.h */,
+				234BE31B18D630110036F213 /* MainViewController.m */,
+				234BE31418D630110036F213 /* FlipsideViewController.h */,
+				234BE31518D630110036F213 /* FlipsideViewController.m */,
+				23DE5DC01918201B0063D6BD /* EnterNameController.h */,
+				23DE5DBF1918201B0063D6BD /* EnterNameController.m */,
+				234BE2EE18D630110036F213 /* AppDelegate.h */,
+				234BE2EF18D630110036F213 /* AppDelegate.m */,
+				234BE31C18D630110036F213 /* OwnPhraseViewController.h */,
+				234BE31D18D630110036F213 /* OwnPhraseViewController.m */,
+				23C2072C1926D2BF00931EE0 /* GameCenterManager.h */,
+				23C2072D1926D2BF00931EE0 /* GameCenterManager.m */,
+			);
+			path = Quo;
+			sourceTree = "<group>";
+		};
+		234BE36118D633760036F213 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				234BE2FD18D630110036F213 /* bookmarks.plist */,
+				234BE31618D630110036F213 /* InitialDefaults.plist */,
+				234BE31918D630110036F213 /* main.m */,
+				234BE2F218D630110036F213 /* BareFeet-Info.plist */,
+				234BE2F318D630110036F213 /* BareFeet-Prefix.pch */,
+				23BC1D56191EE96B002EBB43 /* Data.plist */,
+			);
+			name = System;
+			sourceTree = "<group>";
+		};
+		234BE36218D634230036F213 /* GameImages */ = {
+			isa = PBXGroup;
+			children = (
+				3CA4967E1935107D00079E05 /* backgroundButton.png */,
+				23C8D3791929562700B79ADB /* Help1.png */,
+				233E8D7818FE9CD2000ECC05 /* Button-1@2x.png */,
+				2316C5B219253507005B78AA /* palec.png */,
+				234BE2FE18D630110036F213 /* Button-1.png */,
+				23D81D3818D50A34000483BB /* Feet.png */,
+			);
+			name = GameImages;
+			sourceTree = "<group>";
+		};
+		234BE36318D635730036F213 /* HTML */ = {
+			isa = PBXGroup;
+			children = (
+				2327770319F8155F0059B136 /* game-ipad.html */,
+				23D81D2F18D50833000483BB /* game-iphoneV.html */,
+			);
+			name = HTML;
+			sourceTree = "<group>";
+		};
+		23D81D3118D5084B000483BB /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				2320C50319181A3B00536C9F /* Music2.png */,
+				2320C50419181A3B00536C9F /* Music2@2x.png */,
+				3CDD78161917FB4D00F9E56E /* Speaker1@2x.png */,
+				3C9C253C19169C48004498DE /* Speaker1.png */,
+				235CBC4219151016009CA131 /* voshebstvo.m4a */,
+				23D1B6B4191056E200EC3C41 /* blocked.aiff */,
+				23DFA690190FD0490014D18D /* zamokOpen.png */,
+				23DFA691190FD0490014D18D /* zamokOpen@2x.png */,
+				230E6EE5190EDDF7007E94D9 /* zamok.png */,
+				230E6EE6190EDDF7007E94D9 /* zamok@2x.png */,
+				2313E5C918E8B0A900755B01 /* Music3.png */,
+				2313E5CA18E8B0A900755B01 /* Music3@2x.png */,
+				23D81D3618D5089A000483BB /* tap-flip.caf */,
+				23D81D3218D50867000483BB /* BimBom2.caf */,
+				23D9570518D50766007222F8 /* BareFeet.mp3 */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+		8706A90316462F1D00FDB1F6 = {
+			isa = PBXGroup;
+			children = (
+				23E98A2B20FFD66100128F06 /* Launch Screen.storyboard */,
+				23E98A2620FFAE2800128F06 /* Images.xcassets */,
+				232B901718E0E81700838966 /* XIB */,
+				234BE36318D635730036F213 /* HTML */,
+				234BE36118D633760036F213 /* System */,
+				234BE36218D634230036F213 /* GameImages */,
+				234BE2EB18D630110036F213 /* Quo */,
+				23D81D3118D5084B000483BB /* Sound */,
+				8706A91116462F1D00FDB1F6 /* Frameworks */,
+				8706A90F16462F1D00FDB1F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8706A90F16462F1D00FDB1F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8706A90E16462F1D00FDB1F6 /* BareFeet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8706A91116462F1D00FDB1F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23FE83612100B74300EC2E9E /* SafariServices.framework */,
+				2327770119F808B10059B136 /* iAd.framework */,
+				2316C5B4192568B8005B78AA /* GameKit.framework */,
+				23C5F202190D9C680016D999 /* QuartzCore.framework */,
+				2385741118EAFCE6000C8A36 /* AudioToolbox.framework */,
+				230CA80C18EA27370032954F /* AVFoundation.framework */,
+				87A3043916604A42009B575A /* StoreKit.framework */,
+				87F6E3441658B5F900676055 /* MessageUI.framework */,
+				8706A91216462F1D00FDB1F6 /* UIKit.framework */,
+				8706A91416462F1D00FDB1F6 /* Foundation.framework */,
+				8706A91616462F1D00FDB1F6 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8706A90D16462F1D00FDB1F6 /* BareFeet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8706A93B16462F1D00FDB1F6 /* Build configuration list for PBXNativeTarget "BareFeet" */;
+			buildPhases = (
+				8706A90A16462F1D00FDB1F6 /* Sources */,
+				8706A90B16462F1D00FDB1F6 /* Frameworks */,
+				8706A90C16462F1D00FDB1F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BareFeet;
+			productName = Quo;
+			productReference = 8706A90E16462F1D00FDB1F6 /* BareFeet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8706A90516462F1D00FDB1F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Slavamax BVBVA";
+				TargetAttributes = {
+					8706A90D16462F1D00FDB1F6 = {
+						DevelopmentTeam = M86RX4L23R;
+						SystemCapabilities = {
+							com.apple.GameCenter.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8706A90816462F1D00FDB1F6 /* Build configuration list for PBXProject "BareFeet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+			);
+			mainGroup = 8706A90316462F1D00FDB1F6;
+			productRefGroup = 8706A90F16462F1D00FDB1F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8706A90D16462F1D00FDB1F6 /* BareFeet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8706A90C16462F1D00FDB1F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23E98A2720FFAE2900128F06 /* Images.xcassets in Resources */,
+				23D9570618D50766007222F8 /* BareFeet.mp3 in Resources */,
+				23D81D3018D50833000483BB /* game-iphoneV.html in Resources */,
+				23D81D3318D50867000483BB /* BimBom2.caf in Resources */,
+				23D81D3718D5089A000483BB /* tap-flip.caf in Resources */,
+				23D81D3918D50A34000483BB /* Feet.png in Resources */,
+				234BE33E18D630110036F213 /* bookmarks.plist in Resources */,
+				3C427CE61937E53300F9FA55 /* ScoresTableViewController_iPad.xib in Resources */,
+				234BE33F18D630110036F213 /* Button-1.png in Resources */,
+				234BE34618D630110036F213 /* MainViewController_iPad.xib in Resources */,
+				234BE34818D630110036F213 /* OwnPhraseViewController.xib in Resources */,
+				234BE34918D630110036F213 /* OwnPhraseViewController_iPad.xib in Resources */,
+				234BE34F18D630110036F213 /* InitialDefaults.plist in Resources */,
+				3CDD78171917FB4D00F9E56E /* Speaker1@2x.png in Resources */,
+				3C9C253D19169C48004498DE /* Speaker1.png in Resources */,
+				3C427CE41937E4B700F9FA55 /* FlipsideViewController_iPad.xib in Resources */,
+				2327770419F8155F0059B136 /* game-ipad.html in Resources */,
+				2313E5CC18E8B0A900755B01 /* Music3.png in Resources */,
+				23E98A2C20FFD66100128F06 /* Launch Screen.storyboard in Resources */,
+				2313E5CD18E8B0A900755B01 /* Music3@2x.png in Resources */,
+				233E8D7918FE9CD2000ECC05 /* Button-1@2x.png in Resources */,
+				230E6EE7190EDDF7007E94D9 /* zamok.png in Resources */,
+				230E6EE8190EDDF7007E94D9 /* zamok@2x.png in Resources */,
+				23DFA692190FD0490014D18D /* zamokOpen.png in Resources */,
+				23DFA693190FD0490014D18D /* zamokOpen@2x.png in Resources */,
+				23D1B6B5191056E200EC3C41 /* blocked.aiff in Resources */,
+				235CBC4319151016009CA131 /* voshebstvo.m4a in Resources */,
+				2320C5001918119400536C9F /* FlipsideViewController.xib in Resources */,
+				2320C5021918119D00536C9F /* MainViewController_iPhone.xib in Resources */,
+				3C4F5B9F193A9AA000E7296A /* GameCenterView_iPad.xib in Resources */,
+				2320C50519181A3B00536C9F /* Music2.png in Resources */,
+				3CA4967F1935107D00079E05 /* backgroundButton.png in Resources */,
+				2320C50619181A3B00536C9F /* Music2@2x.png in Resources */,
+				23DE5DBE19181FF70063D6BD /* EnterName.xib in Resources */,
+				233CF95D191D8F5A000524BA /* TableCellView.xib in Resources */,
+				233CF962191D9283000524BA /* ScoresTableViewController.xib in Resources */,
+				23BC1D57191EE96B002EBB43 /* Data.plist in Resources */,
+				2316C5B319253507005B78AA /* palec.png in Resources */,
+				23E284A619263A71003C0CFF /* GameCenterView.xib in Resources */,
+				23C8D37A1929562700B79ADB /* Help1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8706A90A16462F1D00FDB1F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				239D7BE4191BD38A003CA6D7 /* EnterNameController.m in Sources */,
+				234BE33118D630110036F213 /* AppDelegate.m in Sources */,
+				234BE34E18D630110036F213 /* FlipsideViewController.m in Sources */,
+				234BE35218D630110036F213 /* main.m in Sources */,
+				234BE35318D630110036F213 /* MainViewController.m in Sources */,
+				234BE35418D630110036F213 /* OwnPhraseViewController.m in Sources */,
+				233CF95C191D8F5A000524BA /* TableCellView.m in Sources */,
+				233CF961191D9283000524BA /* ScoresTableViewController.m in Sources */,
+				2327770719F853820059B136 /* BannerViewController.m in Sources */,
+				23E284A919264C85003C0CFF /* GameCenterController.m in Sources */,
+				23C2072E1926D2BF00931EE0 /* GameCenterManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		234BE30818D630110036F213 /* MainViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23E98A2820FFAE4A00128F06 /* Base */,
+			);
+			name = MainViewController_iPad.xib;
+			path = Quo;
+			sourceTree = "<group>";
+		};
+		234BE30C18D630110036F213 /* OwnPhraseViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23E98A2920FFAE4A00128F06 /* Base */,
+			);
+			name = OwnPhraseViewController.xib;
+			path = Quo;
+			sourceTree = "<group>";
+		};
+		234BE30E18D630110036F213 /* OwnPhraseViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				23E98A2A20FFAE4A00128F06 /* Base */,
+			);
+			name = OwnPhraseViewController_iPad.xib;
+			path = Quo;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8706A93916462F1D00FDB1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8706A93A16462F1D00FDB1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8706A93C16462F1D00FDB1F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quo/BareFeet-Prefix.pch";
+				INFOPLIST_FILE = "Quo/BareFeet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slavamax.Larisa;
+				PRODUCT_NAME = BareFeet;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8706A93D16462F1D00FDB1F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Quo/BareFeet-Prefix.pch";
+				INFOPLIST_FILE = "Quo/BareFeet-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.slavamax.Larisa;
+				PRODUCT_NAME = BareFeet;
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8706A90816462F1D00FDB1F6 /* Build configuration list for PBXProject "BareFeet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8706A93916462F1D00FDB1F6 /* Debug */,
+				8706A93A16462F1D00FDB1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8706A93B16462F1D00FDB1F6 /* Build configuration list for PBXNativeTarget "BareFeet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8706A93C16462F1D00FDB1F6 /* Debug */,
+				8706A93D16462F1D00FDB1F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8706A90516462F1D00FDB1F6 /* Project object */;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bookm</key>
+	<array>
+		<dict>
+			<key>pozicia</key>
+			<integer>8165</integer>
+			<key>nkniga</key>
+			<integer>1000057</integer>
+			<key>fontsize</key>
+			<integer>15</integer>
+			<key>title</key>
+			<string>Нагорная пр. (Мф.5:1 — 7:29)</string>
+		</dict>
+		<dict>
+			<key>pozicia</key>
+			<integer>12016</integer>
+			<key>nkniga</key>
+			<integer>1000057</integer>
+			<key>fontsize</key>
+			<integer>15</integer>
+			<key>title</key>
+			<string>Отче наш (Мф. 6:9-13)</string>
+		</dict>
+		<dict>
+			<key>pozicia</key>
+			<integer>35379</integer>
+			<key>nkniga</key>
+			<integer>1000059</integer>
+			<key>fontsize</key>
+			<integer>15</integer>
+			<key>title</key>
+			<string>Отче наш (Лк. 11:2-4)</string>
+		</dict>
+		<dict>
+			<key>pozicia</key>
+			<integer>18223</integer>
+			<key>nkniga</key>
+			<integer>1000059</integer>
+			<key>fontsize</key>
+			<integer>15</integer>
+			<key>title</key>
+			<string>Нагорная пр. (Лк.6:17—49)</string>
+		</dict>
+		<dict>
+			<key>pozicia</key>
+			<integer>5964</integer>
+			<key>nkniga</key>
+			<integer>1000065</integer>
+			<key>fontsize</key>
+			<integer>15</integer>
+			<key>title</key>
+			<string>Бог есть любовь (1е Иоанна 4:7-8,18)</string>
+		</dict>
+		<dict>
+			<key>pozicia</key>
+			<integer>23146</integer>
+			<key>nkniga</key>
+			<integer>1000070</integer>
+			<key>fontsize</key>
+			<integer>15</integer>
+			<key>title</key>
+			<string>о Любви (1 Кор. 13:4-8)</string>
+		</dict>
+	</array>
+</dict>
+</plist>
